@@ -23,4 +23,13 @@ public class LevelGrid : Grid
     {
         objects.Remove(obj);
     }
+
+    public void DisplayGrids(bool visible)
+    {
+        SetVisible(visible);
+        foreach(ObjectGrid grid in objects)
+        {
+            grid.SetVisible(visible);
+        }
+    }
 }

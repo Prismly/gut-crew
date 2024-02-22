@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Grid : MonoBehaviour
 {
@@ -49,12 +50,6 @@ public class Grid : MonoBehaviour
     [SerializeField, Tooltip("The height of the grid to create")] private int gridHeight = 1;
     [SerializeField, Tooltip("Mark as true to be able to overwrite an existing grid")] private bool overwriteGrid = false;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void AddTile(Tile newTile)
     {
         if (newTile)
@@ -76,11 +71,11 @@ public class Grid : MonoBehaviour
 
     public void CreateNewGrid()
     {
-        SetupGrid(gridWidth, gridHeight, overwriteGrid);
+        SetupGrid(gridWidth, gridHeight, overwriteGrid, true);
         overwriteGrid = false;
     }
 
-    public void SetupGrid(int xSize, int ySize, bool overridePrevVals)
+    public void SetupGrid(int xSize, int ySize, bool overridePrevVals, bool editMode = false)
     {
         Vector2 tileSize = tilePrefab.GetComponent<Tile>().collider.size;
         if (tiles != null)
@@ -92,7 +87,8 @@ public class Grid : MonoBehaviour
             }
             else
             {
-                ClearLevel();
+                Debug.Log("clearing grid to set up level");
+                ClearLevel(editMode);
             }
         }
 
@@ -121,13 +117,20 @@ public class Grid : MonoBehaviour
         LinkTileList();
     }
 
-    public void ClearLevel()
+    public void ClearLevel(bool editMode = false)
     {
         foreach(Tile tile in tiles)
         {
             if (tile)
             {
-                Destroy(tile.gameObject);
+                if (editMode)
+                {
+                    DestroyImmediate(tile.gameObject);
+                }
+                else
+                {
+                    Destroy(tile.gameObject);
+                }
             }
         }
         tiles = new List<Tile>();
@@ -170,5 +173,13 @@ public class Grid : MonoBehaviour
 #if UNITY_EDITOR
         EditorUtility.SetDirty(this);
 #endif
+    }
+
+    public void SetVisible(bool visible)
+    {
+        foreach(Tile tile in tiles)
+        {
+            tile.SetVisible(visible);
+        }
     }
 }

@@ -277,11 +277,11 @@ public class Tile : MonoBehaviour
         grid.RemoveTile(this);
         if (editMode)
         {
-            DestroyImmediate(this);
+            DestroyImmediate(gameObject);
         }
         else
         {
-            Destroy(this);
+            Destroy(gameObject);
         }
     }
 
@@ -307,5 +307,11 @@ public class Tile : MonoBehaviour
         {
             attachedTile = newTile;
         }
+    }
+
+    public void SetVisible(bool visible)
+    {
+        renderer.enabled = visible;
+        collider.enabled = visible;
     }
 }

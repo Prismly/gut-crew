@@ -13,7 +13,7 @@ public class GridEditor : Editor
         Grid grid = (Grid)target;
 
         base.OnInspectorGUI();
-        if (GUILayout.Button("Setup Level"))
+        if (GUILayout.Button("Setup Grid"))
         {
             if (grid.IsSceneBound())
             {

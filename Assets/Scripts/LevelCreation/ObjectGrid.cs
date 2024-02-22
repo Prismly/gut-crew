@@ -13,6 +13,12 @@ public class ObjectGrid : Grid
         {
             tile.StartDragging();
         }
+        ObjectTile firstTile = (ObjectTile)tiles[0];
+        if(firstTile.CheckRayCast())
+        {
+            Vector3 offset = firstTile.GetHoverOffset();
+            parentTransform.position += new Vector3(offset.x, offset.y, 0);
+        }
     }
 
     public void Start()
@@ -117,6 +123,9 @@ public class ObjectGrid : Grid
         }
         Vector3 diff = tiles[0].attached.transform.position - tiles[0].transform.position;
         transform.position += new Vector3(diff.x, diff.y, 0);
+        LevelGrid owningLevel = (LevelGrid)tiles[0].attached.grid;
+        parentTransform.parent = owningLevel.transform;
+        owningLevel.AddNewObject(this);
         return true;
     }
 
@@ -141,6 +150,11 @@ public class ObjectGrid : Grid
                 tile.SetDefaultColor();
             }
         }
+    }
+
+    public void SetParent(Transform parent)
+    {
+        parentTransform = parent;
     }
 
 }
