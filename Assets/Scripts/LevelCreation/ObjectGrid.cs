@@ -8,6 +8,7 @@ public class ObjectGrid : Grid
     [SerializeField, Tooltip("The overarching parent transform for this object that contains both the grid and the object's functionality")]private Transform parentTransform;
     private Vector3 tileSize;
     [SerializeField, Tooltip("if marked true, this object will destroy objects instead of being placed")] private bool isDestructionObject;
+    [SerializeField, Tooltip("if marked true, then this object can be destroyed by destruction objects. if marked false it will be impervious to destruction")] private bool canDestroy = true;
     public void StartDragging()
     {
         foreach(ObjectTile tile in tiles )
@@ -190,6 +191,11 @@ public class ObjectGrid : Grid
             tile.StopDragging(false);
         }
         Destroy(parentTransform.gameObject);
+    }
+
+    public bool IsDestructible()
+    {
+        return canDestroy;
     }
 
 }

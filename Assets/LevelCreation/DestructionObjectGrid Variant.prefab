@@ -125,6 +125,7 @@ MonoBehaviour:
   numTilesToSpawn: 1
   dragging: 0
   prevHoverTile: {fileID: 0}
+  isDestructionTile: 1
 --- !u!1 &3896614491124940078
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,6 +251,7 @@ MonoBehaviour:
   numTilesToSpawn: 1
   dragging: 0
   prevHoverTile: {fileID: 0}
+  isDestructionTile: 1
 --- !u!1 &6097542777498199695
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,6 +377,7 @@ MonoBehaviour:
   numTilesToSpawn: 1
   dragging: 0
   prevHoverTile: {fileID: 0}
+  isDestructionTile: 1
 --- !u!1 &6665249910485200644
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,6 +503,7 @@ MonoBehaviour:
   numTilesToSpawn: 1
   dragging: 0
   prevHoverTile: {fileID: 0}
+  isDestructionTile: 1
 --- !u!1001 &8921021266840373694
 PrefabInstance:
   m_ObjectHideFlags: 0

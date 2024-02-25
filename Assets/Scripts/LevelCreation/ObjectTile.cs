@@ -7,6 +7,8 @@ public class ObjectTile : Tile
     [SerializeField]private bool dragging = false;
     [SerializeField, Tooltip("the Tile that was most recently hovered over")]
     private Collider prevHoverTile;
+    [Space]
+    [SerializeField, Tooltip("if this tile is part of a destruction object")] private bool isDestructionTile = false;
 
     // Update is called once per frame
     void Update()
@@ -45,7 +47,8 @@ public class ObjectTile : Tile
     {
         if (destructible)
         {
-            return prevHoverTile && prevHoverTile.GetComponent<Tile>().attached;
+            ObjectTile attachedTile = (ObjectTile)prevHoverTile.GetComponent<Tile>().attached;
+            return prevHoverTile && attachedTile && attachedTile.IsDestructible();
         }
         return prevHoverTile && !prevHoverTile.GetComponent<Tile>().attached;
     }
@@ -111,8 +114,16 @@ public class ObjectTile : Tile
             Tile hitTile = hit.GetComponent<Tile>();
             if (hitTile.attached)
             {
-                hitTile.SetErrorColor();
-                SetErrorColor();
+                if (isDestructionTile && !((ObjectTile)hitTile.attached).IsDestructible())
+                {
+                    hitTile.SetHighlightColor();
+                    SetHighlightColor();
+                }
+                else
+                {
+                    hitTile.SetErrorColor();
+                    SetErrorColor();
+                }
             }
             else
             {
@@ -148,5 +159,10 @@ public class ObjectTile : Tile
             return Vector3.zero;
         }
         return prevHoverTile.transform.position - transform.position;
+    }
+
+    public bool IsDestructible()
+    {
+        return ((ObjectGrid)grid).IsDestructible();
     }
 }
