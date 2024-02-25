@@ -26,6 +26,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform rightToe;
     [SerializeField] private float groundedCastDist = 0.05f;
     private bool groundCastFlag = false;
+    [Header("Interacting")]
+    [SerializeField] private GameObject InteractArea;
 
     private enum GroundedStates
     {
@@ -165,6 +167,13 @@ public class PlayerController : MonoBehaviour
     //    bool upFromCenter = contactPos.y > myCollider.bounds.center.y;
     //}
 
+    public void Jump()
+    {
+        // Jump Input
+        myBody.AddForce(jumpImpulse * Vector2.up, ForceMode2D.Impulse);
+        canJump = false;
+    }
+
     public void OnMove(InputAction.CallbackContext context)
     {
         currentInput = context.ReadValue<Vector2>();
@@ -174,15 +183,20 @@ public class PlayerController : MonoBehaviour
     {
         if (context.started && canJump)
         {
-            // Jump Input
-            myBody.AddForce(jumpImpulse * Vector2.up, ForceMode2D.Impulse);
-            canJump = false;
+            Jump();
         }
     }
 
     public void OnInteract(InputAction.CallbackContext context)
     {
         // Interact
+        StartCoroutine(ToggleInteractArea());
+    }
 
+    IEnumerator ToggleInteractArea()
+    {
+        InteractArea.SetActive(true);
+        yield return new WaitForSeconds(0.1f);
+        InteractArea.SetActive(false);
     }
 }
