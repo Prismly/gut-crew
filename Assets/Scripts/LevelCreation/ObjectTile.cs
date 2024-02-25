@@ -41,8 +41,12 @@ public class ObjectTile : Tile
         }
     }
 
-    public bool IsValid()
+    public bool IsValid(bool destructible = false)
     {
+        if (destructible)
+        {
+            return prevHoverTile && prevHoverTile.GetComponent<Tile>().attached;
+        }
         return prevHoverTile && !prevHoverTile.GetComponent<Tile>().attached;
     }
 
@@ -61,6 +65,28 @@ public class ObjectTile : Tile
     public bool CheckMoveRight()
     {
         return prevHoverTile && prevHoverTile.GetComponent<Tile>().right;
+    }
+
+
+    public void DestroyObject()
+    {
+        if (prevHoverTile)
+        {
+            Tile hoverTile = prevHoverTile.GetComponent<Tile>();
+            hoverTile.SetDefaultColor();
+            if (!hoverTile.attached)
+            {
+                return;
+            }
+
+            ObjectGrid hoverObject = (ObjectGrid)(prevHoverTile.GetComponent<Tile>().attached.grid);
+            if (!hoverObject)
+            {
+                return;
+            }
+            ((LevelGrid)prevHoverTile.GetComponent<Tile>().grid).RemoveObject(hoverObject);
+            hoverObject.DestroyObject();
+        }
     }
 
 

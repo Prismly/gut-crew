@@ -122,6 +122,7 @@ MonoBehaviour:
   rightTile: {fileID: 1152626766}
   attachedTile: {fileID: 0}
   owningGrid: {fileID: 9201616524977539766}
+  numTilesToSpawn: 1
   dragging: 0
   prevHoverTile: {fileID: 0}
 --- !u!1 &270222542
@@ -246,6 +247,7 @@ MonoBehaviour:
   rightTile: {fileID: 723711512}
   attachedTile: {fileID: 0}
   owningGrid: {fileID: 9201616524977539766}
+  numTilesToSpawn: 1
   dragging: 0
   prevHoverTile: {fileID: 0}
 --- !u!1 &723711508
@@ -370,6 +372,7 @@ MonoBehaviour:
   rightTile: {fileID: 0}
   attachedTile: {fileID: 0}
   owningGrid: {fileID: 9201616524977539766}
+  numTilesToSpawn: 1
   dragging: 0
   prevHoverTile: {fileID: 0}
 --- !u!1 &1152626765
@@ -494,6 +497,7 @@ MonoBehaviour:
   rightTile: {fileID: 0}
   attachedTile: {fileID: 0}
   owningGrid: {fileID: 9201616524977539766}
+  numTilesToSpawn: 1
   dragging: 0
   prevHoverTile: {fileID: 0}
 --- !u!1 &1406225486
@@ -618,6 +622,7 @@ MonoBehaviour:
   rightTile: {fileID: 1939215333}
   attachedTile: {fileID: 0}
   owningGrid: {fileID: 9201616524977539766}
+  numTilesToSpawn: 1
   dragging: 0
   prevHoverTile: {fileID: 0}
 --- !u!1 &1939215329
@@ -742,6 +747,7 @@ MonoBehaviour:
   rightTile: {fileID: 0}
   attachedTile: {fileID: 0}
   owningGrid: {fileID: 9201616524977539766}
+  numTilesToSpawn: 1
   dragging: 0
   prevHoverTile: {fileID: 0}
 --- !u!1001 &7465558296599496308
@@ -797,7 +803,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6750683639361627479, guid: 5aef5b48f220c8e459c5046e4f799ce9, type: 3}
       propertyPath: m_Name
-      value: ObjectGrid
+      value: ObjectGrid Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8865341577658840937, guid: 5aef5b48f220c8e459c5046e4f799ce9, type: 3}
       propertyPath: m_RootOrder
@@ -805,15 +811,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8865341577658840937, guid: 5aef5b48f220c8e459c5046e4f799ce9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.0597262
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8865341577658840937, guid: 5aef5b48f220c8e459c5046e4f799ce9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.12858677
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8865341577658840937, guid: 5aef5b48f220c8e459c5046e4f799ce9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0075846016
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8865341577658840937, guid: 5aef5b48f220c8e459c5046e4f799ce9, type: 3}
       propertyPath: m_LocalRotation.w
