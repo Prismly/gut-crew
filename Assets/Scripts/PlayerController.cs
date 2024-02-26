@@ -18,14 +18,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float runAccel = 1.0f;
     [SerializeField] private float dragAccel = 1.0f;
     [Header("Jumping")]
-    private bool canJump = true;
+    //private bool canJump = true;
     [SerializeField] private float jumpImpulse = 5.0f;
     [SerializeField] private float gravScaleLow = 1.0f;
     [SerializeField] private float gravScaleHigh = 2.0f;
-    [SerializeField] private Transform leftToe;
-    [SerializeField] private Transform rightToe;
-    [SerializeField] private float groundedCastDist = 0.05f;
-    private bool groundCastFlag = false;
+    [SerializeField] private GroundTrigger groundChecker;
+    //[SerializeField] private float groundedCastDist = 0.05f;
 
     private enum GroundedStates
     {
@@ -33,14 +31,11 @@ public class PlayerController : MonoBehaviour
         COYOTE_TIME,
         AIRBORNE
     }
-    private GroundedStates isGrounded = GroundedStates.GROUNDED;
-    private float coyoteTimeDur = 1.0f;
+    [SerializeField] private GroundedStates isGrounded = GroundedStates.GROUNDED;
+    [SerializeField] private float coyoteTimeDur = 1.0f;
     private float coyoteTimer = 0f;
 
     private Vector2Int prevMoveDir = Vector2Int.zero;
-
-    // Directions Convention is UDLR
-    private int[] contactCount = new int[4];
 
     private void Start()
     {
@@ -50,40 +45,13 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        // The raycasts for the ground check MUST be done in Update, and not FixedUpdate.
-        // For one reason or another, the position fields used as origins lag behind when done from FixedUpdate.
-        if (groundCastFlag)
-        {
-            Debug.DrawRay(leftToe.position, Vector2.down * groundedCastDist, Color.red);
-            RaycastHit2D groundCheckLeft = Physics2D.Raycast(leftToe.position, Vector2.down, groundedCastDist, LayerMask.GetMask("Terrain"));
-            Debug.DrawRay(rightToe.position, Vector2.down * groundedCastDist, Color.red);
-            RaycastHit2D groundCheckRight = Physics2D.Raycast(rightToe.position, Vector2.down, groundedCastDist, LayerMask.GetMask("Terrain"));
-
-            bool groundCheck = groundCheckLeft.collider && groundCheckRight.collider;
-            if (groundCheck)
-            {
-                isGrounded = GroundedStates.GROUNDED;
-            }
-            else if (isGrounded == GroundedStates.GROUNDED)
-            {
-                // Start Coyote Timer
-                isGrounded = GroundedStates.COYOTE_TIME;
-                coyoteTimer = 0f;
-            }
-            else
-            {
-                isGrounded = GroundedStates.AIRBORNE;
-            }
-
-            groundCastFlag = false;
-        }
-
         // A negative value in the timer indicates that that timer is off.
         if (coyoteTimer >= 0)
         {
-            coyoteTimer += Time.deltaTime;
-            if (coyoteTimer >= coyoteTimeDur)
+            coyoteTimer -= Time.deltaTime;
+            if (coyoteTimer <= 0)
             {
+                Debug.Log("Grounded State to AIRBORNE (coyote timer expired)");
                 isGrounded = GroundedStates.AIRBORNE;
                 coyoteTimer = -1f;
             }
@@ -92,6 +60,8 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        //Debug.Log("FU here. State of delayedGroundCheck is " + delayedGroundCheck);
+
         HorizontalMovement();
 
         VerticalMovement();
@@ -139,12 +109,23 @@ public class PlayerController : MonoBehaviour
     public void VerticalMovement()
     {
         // Check for Groundedness
-        groundCastFlag = true;
+        //groundCastFlag = true;
 
-        if (isGrounded == GroundedStates.GROUNDED)
+        bool playerOnGround = groundChecker.GroundCheck();
+        if (isGrounded != GroundedStates.GROUNDED && playerOnGround && myBody.velocity.y <= 0)
         {
-            // Raycast downwards from each bottom corner of the character's hitbox.
-            // If neither ray hits a terrain object, the character begins coyote timing.
+            // Player was not on the ground, but is now (and not traveling away from it).
+            // Therefore, player is grounded.
+            Debug.Log("Grounded State to GROUNDED (ground check succeeded and falling)");
+            isGrounded = GroundedStates.GROUNDED;
+        }
+        else if (!playerOnGround && isGrounded == GroundedStates.GROUNDED)
+        {
+            // Player was just on the ground, but isn't anymore.
+            // Therefore, player has walked off of a ledge; activate Coyote Time(tm).
+            Debug.Log("Grounded State to COYOTE_TIME (grounded and ground check failed)");
+            isGrounded = GroundedStates.COYOTE_TIME;
+            coyoteTimer = coyoteTimeDur;
         }
 
         // Adjust Gravity Scale
@@ -154,17 +135,6 @@ public class PlayerController : MonoBehaviour
             myBody.gravityScale = gravScaleHigh;
     }
 
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    Vector2 closestPoint = myCollider.ClosestPoint()
-    //    Vector2 contactPos = Vector2.zero;
-    //    while (contactPos != Vector2.zero)
-    //    {
-    //        contactPos = collision.GetContact(0).point;
-    //    }
-    //    bool upFromCenter = contactPos.y > myCollider.bounds.center.y;
-    //}
-
     public void OnMove(InputAction.CallbackContext context)
     {
         currentInput = context.ReadValue<Vector2>();
@@ -172,11 +142,15 @@ public class PlayerController : MonoBehaviour
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        if (context.started && canJump)
+        if (context.started && isGrounded != GroundedStates.AIRBORNE)
         {
             // Jump Input
+            Debug.Log("Grounded State to AIRBORNE (jumped)");
+            isGrounded = GroundedStates.AIRBORNE;
+            coyoteTimer = -1f;
+            // Zero out any vertical velocity, so falling jumps (from Coyote Time) have the same kick.
+            myBody.velocity *= Vector2.right;
             myBody.AddForce(jumpImpulse * Vector2.up, ForceMode2D.Impulse);
-            canJump = false;
         }
     }
 
