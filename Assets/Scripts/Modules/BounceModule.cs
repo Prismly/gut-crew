@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class BounceModule : ModuleBehavior
 {
-    public override void Execute(GameObject Executor)
+    [SerializeField] private float BounceImpulse = 30f;
+
+    protected override void Execute(GameObject Executor)
     {
         PlayerController player;
         if (player = Executor.GetComponent<PlayerController>())
         {
-            player.Jump();
+            player.Jump(BounceImpulse);
         }
     }
 }

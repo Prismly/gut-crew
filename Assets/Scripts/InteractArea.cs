@@ -10,7 +10,7 @@ public class InteractArea : MonoBehaviour
         ModuleBehavior module;
         if (module = Interactable.GetComponent<ModuleBehavior>())
         {
-            module.Execute(transform.parent.gameObject);
+            module.ActivateModule(transform.parent.gameObject);
         }
         else
         {

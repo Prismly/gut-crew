@@ -10,6 +10,9 @@ public class ModuleController : MonoBehaviour
     [SerializeField, Tooltip("the game manager")] private MicroGameManager GameManager;
     private ObjectGrid grid;
 
+    private bool placingPair = false;
+    private GameObject previousModule;
+
     private int moduleIndex = 0;
 
     private bool movedRight = false;
@@ -48,12 +51,25 @@ public class ModuleController : MonoBehaviour
                     droppedObject = false;
                     grid.StartDragging();
 
-                    moduleIndex++;
-                    if (moduleIndex >= ModulesToPlace.Length)
+                    ModuleBehavior behavior;
+                    if (behavior = newObject.GetComponent<ModuleBehavior>())
                     {
-                        Debug.Log("Out of modules");
-                        GameManager.EndModulePlacement();
-                        Destroy(gameObject);
+                        if (behavior.HasPairModule())
+                        {
+
+                        }
+
+                        moduleIndex++;
+                        if (moduleIndex >= ModulesToPlace.Length)
+                        {
+                            Debug.Log("Out of modules");
+                            GameManager.EndModulePlacement();
+                            Destroy(gameObject);
+                        }
+                    }
+                    else
+                    {
+                        Debug.LogError("Placed Module has no Module Behavior");
                     }
                 }
             }
