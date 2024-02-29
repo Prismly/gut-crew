@@ -9,6 +9,7 @@ public class ObjectGrid : Grid
     private Vector3 tileSize;
     [SerializeField, Tooltip("if marked true, this object will destroy objects instead of being placed")] private bool isDestructionObject;
     [SerializeField, Tooltip("if marked true, then this object can be destroyed by destruction objects. if marked false it will be impervious to destruction")] private bool canDestroy = true;
+    private bool isPlaced = false;
     public void StartDragging()
     {
         foreach(ObjectTile tile in tiles )
@@ -109,18 +110,23 @@ public class ObjectGrid : Grid
     }
 
 
-    public bool StopDragging()
+    public bool StopDragging(bool IsPlaying = true)
     {
+        if (isPlaced)
+        {
+            Debug.LogWarning("Object is already placed. Disconnect object first before placing in a new location");
+            return false;
+        }
         bool valid;
         valid = !isDestructionObject;
         foreach (ObjectTile tile in tiles)
         {
-            if (!tile.IsValid(isDestructionObject) && !isDestructionObject)
+            if (!tile.IsValid(isDestructionObject, !IsPlaying) && !isDestructionObject)
             {
                 Debug.LogWarning("Cannot place here");
                 return false;
             }
-            else if(tile.IsValid(isDestructionObject) && isDestructionObject)
+            else if(tile.IsValid(isDestructionObject, !IsPlaying) && isDestructionObject)
             {
                 valid = true;
             }
@@ -151,6 +157,7 @@ public class ObjectGrid : Grid
             parentTransform.parent = owningLevel.transform;
             owningLevel.AddNewObject(this);
         }
+        isPlaced = true;
         return true;
     }
 
@@ -196,6 +203,26 @@ public class ObjectGrid : Grid
     public bool IsDestructible()
     {
         return canDestroy;
+    }
+
+    public void DisconnectGrid()
+    {
+        if (tiles[0].attached)
+        {
+            LevelGrid owningLevel = (LevelGrid)tiles[0].attached.grid;
+            if (owningLevel)
+            {
+                parentTransform.parent = owningLevel.transform.parent;
+                owningLevel.RemoveObject(this);
+            }
+        }
+        foreach (ObjectTile tile in tiles)
+        {
+            tile.Disconnect();
+        }
+
+        isPlaced = false;
+        
     }
 
 }

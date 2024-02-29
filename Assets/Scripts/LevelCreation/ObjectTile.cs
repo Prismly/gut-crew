@@ -43,12 +43,20 @@ public class ObjectTile : Tile
         }
     }
 
-    public bool IsValid(bool destructible = false)
+    public bool IsValid(bool destructible = false, bool tryCheckTile = false)
     {
+        if (tryCheckTile)
+        {
+            CheckRayCast();
+        }
         if (destructible)
         {
             ObjectTile attachedTile = (ObjectTile)prevHoverTile.GetComponent<Tile>().attached;
             return prevHoverTile && attachedTile && attachedTile.IsDestructible();
+        }
+        if (!prevHoverTile)
+        {
+            Debug.Log("no hover tile");
         }
         return prevHoverTile && !prevHoverTile.GetComponent<Tile>().attached;
     }
@@ -164,5 +172,14 @@ public class ObjectTile : Tile
     public bool IsDestructible()
     {
         return ((ObjectGrid)grid).IsDestructible();
+    }
+
+    public void Disconnect()
+    {
+        if (attached)
+        {
+            attached.DisconnectTile();
+        }
+        DisconnectTile();
     }
 }
