@@ -7,6 +7,8 @@ public class ObjectGrid : Grid
 {
     [SerializeField, Tooltip("The overarching parent transform for this object that contains both the grid and the object's functionality")]private Transform parentTransform;
     private Vector3 tileSize;
+    [SerializeField, Tooltip("if marked true, this object will destroy objects instead of being placed")] private bool isDestructionObject;
+    [SerializeField, Tooltip("if marked true, then this object can be destroyed by destruction objects. if marked false it will be impervious to destruction")] private bool canDestroy = true;
     public void StartDragging()
     {
         foreach(ObjectTile tile in tiles )
@@ -109,23 +111,46 @@ public class ObjectGrid : Grid
 
     public bool StopDragging()
     {
+        bool valid;
+        valid = !isDestructionObject;
         foreach (ObjectTile tile in tiles)
         {
-            if (!tile.IsValid())
+            if (!tile.IsValid(isDestructionObject) && !isDestructionObject)
             {
                 Debug.LogWarning("Cannot place here");
                 return false;
             }
+            else if(tile.IsValid(isDestructionObject) && isDestructionObject)
+            {
+                valid = true;
+            }
         }
-        foreach (ObjectTile tile in tiles)
+        if (!valid)
         {
-            tile.StopDragging(true);
+            return false;
         }
-        Vector3 diff = tiles[0].attached.transform.position - tiles[0].transform.position;
-        transform.position += new Vector3(diff.x, diff.y, 0);
-        LevelGrid owningLevel = (LevelGrid)tiles[0].attached.grid;
-        parentTransform.parent = owningLevel.transform;
-        owningLevel.AddNewObject(this);
+        
+        if (isDestructionObject)
+        {
+            foreach(ObjectTile tile in tiles)
+            {
+                tile.DestroyObject();
+            }
+            Highlight(false);
+            DestroyObject();
+        }
+        else
+        {
+            foreach (ObjectTile tile in tiles)
+            {
+                tile.StopDragging(true);
+            }
+            Vector3 diff = tiles[0].attached.transform.position - tiles[0].transform.position;
+            transform.position += new Vector3(diff.x, diff.y, 0);
+            LevelGrid owningLevel = (LevelGrid)tiles[0].attached.grid;
+            parentTransform.parent = owningLevel.transform;
+            owningLevel.AddNewObject(this);
+        }
         return true;
     }
 
@@ -155,6 +180,22 @@ public class ObjectGrid : Grid
     public void SetParent(Transform parent)
     {
         parentTransform = parent;
+        transform.parent = parent;
+    }
+
+
+    public void DestroyObject()
+    {
+        foreach(ObjectTile tile in tiles)
+        {
+            tile.StopDragging(false);
+        }
+        Destroy(parentTransform.gameObject);
+    }
+
+    public bool IsDestructible()
+    {
+        return canDestroy;
     }
 
 }
