@@ -8,6 +8,8 @@ public class DemoObjectController : MonoBehaviour
     [SerializeField, Tooltip("the level grid to set visibility")] private LevelGrid owningLevel;
     [SerializeField, Tooltip("the object being controlled")] private ObjectGrid grid;
     [SerializeField, Tooltip("object prefab")] private GameObject gridPrefab;
+    [SerializeField, Tooltip("the destruction object prefab")] private GameObject destructionPrefab;
+    [SerializeField, Tooltip("if this should spawn destruction next")] private bool testDestruction;
     private bool movedRight = false;
     private bool movedLeft = false;
     private bool movedUp = false;
@@ -20,7 +22,7 @@ public class DemoObjectController : MonoBehaviour
     private bool clickedVisible = false;
     private void Start()
     {
-        grid.SetParent(transform);
+        //grid.SetParent(transform);
         grid.StartDragging();
     }
 
@@ -35,10 +37,18 @@ public class DemoObjectController : MonoBehaviour
                 if (grid.StopDragging())
                 {
                     droppedObject = true;
-                    grid.transform.parent = transform.parent;
-                    GameObject newObject = Instantiate(gridPrefab, transform);
-                    grid = newObject.GetComponent<ObjectGrid>();
-                    grid.SetParent(transform);
+                    //grid.transform.parent = transform.parent;
+                    GameObject newObject;
+                    if (testDestruction)
+                    {
+                        newObject = Instantiate(destructionPrefab, transform);
+                    }
+                    else
+                    {
+                        newObject = Instantiate(gridPrefab, transform);
+                    }    
+                    grid = newObject.GetComponentInChildren<ObjectGrid>();
+                    //grid.SetParent(transform);
                     droppedObject = false;
                     grid.StartDragging();
                 }

@@ -182,4 +182,17 @@ public class Grid : MonoBehaviour
             tile.SetVisible(visible);
         }
     }
+
+    public void DestroyGrid(bool editMode = false)
+    {
+        ClearLevel(false);
+        if (editMode)
+        {
+            DestroyImmediate(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 }

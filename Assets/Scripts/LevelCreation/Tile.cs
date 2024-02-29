@@ -95,6 +95,9 @@ public class Tile : MonoBehaviour
         set { owningGrid = value; }
     }
 
+    [Header("Creation")]
+    [SerializeField, Tooltip("the number of tiles to spawn in a line")] private int numTilesToSpawn = 1;
+
     public void AddNewTileToList(Tile newTile)
     {
         grid.AddTile(newTile);
@@ -104,8 +107,17 @@ public class Tile : MonoBehaviour
 #endif
     }
 
-    public void SpawnAbove()
+    public void SpawnAbove(int numSpawns = -1)
     {
+        if(numSpawns == -1)
+        {
+            numSpawns = numTilesToSpawn;
+            numTilesToSpawn = 1;
+        }
+        if(numSpawns == 0)
+        {
+            return;
+        }
         if (up)
         {
             Debug.LogError("TILE ALREADY EXISTS ABOVE");
@@ -144,10 +156,20 @@ public class Tile : MonoBehaviour
 
         newTileScript.grid = grid;
         AddNewTileToList(newTileScript);
+        newTileScript.SpawnAbove(numSpawns - 1);
     }
 
-    public void SpawnBelow()
+    public void SpawnBelow(int numSpawns = -1)
     {
+        if (numSpawns == -1)
+        {
+            numSpawns = numTilesToSpawn;
+            numTilesToSpawn = 1;
+        }
+        if (numSpawns == 0)
+        {
+            return;
+        }
         if (down)
         {
             Debug.LogError("TILE ALREADY EXISTS BELOW");
@@ -186,10 +208,20 @@ public class Tile : MonoBehaviour
 
         newTileScript.grid = grid;
         AddNewTileToList(newTileScript);
+        newTileScript.SpawnBelow(numSpawns - 1);
     }
 
-    public void SpawnRight()
+    public void SpawnRight(int numSpawns = -1)
     {
+        if (numSpawns == -1)
+        {
+            numSpawns = numTilesToSpawn;
+            numTilesToSpawn = 1;
+        }
+        if (numSpawns == 0)
+        {
+            return;
+        }
         if (right)
         {
             Debug.LogError("TILE ALREADY EXISTS TO THE RIGHT");
@@ -228,10 +260,20 @@ public class Tile : MonoBehaviour
 
         newTileScript.grid = grid;
         AddNewTileToList(newTileScript);
+        newTileScript.SpawnRight(numSpawns - 1);
     }
 
-    public void SpawnLeft()
+    public void SpawnLeft(int numSpawns = -1)
     {
+        if (numSpawns == -1)
+        {
+            numSpawns = numTilesToSpawn;
+            numTilesToSpawn = 1;
+        }
+        if (numSpawns == 0)
+        {
+            return;
+        }
         if (left)
         {
             Debug.LogError("TILE ALREADY EXISTS TO THE LEFT");
@@ -270,6 +312,7 @@ public class Tile : MonoBehaviour
 
         newTileScript.grid = grid;
         AddNewTileToList(newTileScript);
+        newTileScript.SpawnLeft(numSpawns - 1);
     }
 
     public void DeleteTile(bool editMode = false)
