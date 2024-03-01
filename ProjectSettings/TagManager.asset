@@ -14,8 +14,8 @@ TagManager:
   - LevelTile
   - Minimap
   - Wall
-  - 
-  - 
+  - Player
+  - Map
   - 
   - 
   - 
