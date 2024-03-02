@@ -88,6 +88,10 @@ PrefabInstance:
       value: ObjectGrid Variant
       objectReference: {fileID: 0}
     - target: {fileID: 9201616524977539766, guid: 1a1a686bdce0cc540884596f7e021e52, type: 3}
+      propertyPath: overwriteGrid
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201616524977539766, guid: 1a1a686bdce0cc540884596f7e021e52, type: 3}
       propertyPath: parentTransform
       value: 
       objectReference: {fileID: 3481101060596361230}

@@ -352,6 +352,12 @@ public class Tile : MonoBehaviour
         }
     }
 
+    public void DisconnectTile()
+    {
+        attachedTile = null;
+        SetDefaultColor();
+    }
+
     public void SetVisible(bool visible)
     {
         renderer.enabled = visible;
