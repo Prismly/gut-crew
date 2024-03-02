@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
             coyoteTimer -= Time.deltaTime;
             if (coyoteTimer <= 0)
             {
-                Debug.Log("Grounded State to AIRBORNE (coyote timer expired)");
+                //Debug.Log("Grounded State to AIRBORNE (coyote timer expired)");
                 isGrounded = GroundedStates.AIRBORNE;
                 coyoteTimer = -1f;
             }
@@ -119,14 +119,14 @@ public class PlayerController : MonoBehaviour
         {
             // Player was not on the ground, but is now (and not traveling away from it).
             // Therefore, player is grounded.
-            Debug.Log("Grounded State to GROUNDED (ground check succeeded and falling)");
+            //Debug.Log("Grounded State to GROUNDED (ground check succeeded and falling)");
             isGrounded = GroundedStates.GROUNDED;
         }
         else if (!playerOnGround && isGrounded == GroundedStates.GROUNDED)
         {
             // Player was just on the ground, but isn't anymore.
             // Therefore, player has walked off of a ledge; activate Coyote Time(tm).
-            Debug.Log("Grounded State to COYOTE_TIME (grounded and ground check failed)");
+            //Debug.Log("Grounded State to COYOTE_TIME (grounded and ground check failed)");
             isGrounded = GroundedStates.COYOTE_TIME;
             coyoteTimer = coyoteTimeDur;
         }
@@ -144,7 +144,7 @@ public class PlayerController : MonoBehaviour
             impulse = jumpImpulse;
         
         // Jump Input
-        Debug.Log("Grounded State to AIRBORNE (jumped)");
+        //Debug.Log("Grounded State to AIRBORNE (jumped)");
         isGrounded = GroundedStates.AIRBORNE;
         coyoteTimer = -1f;
         // Zero out any vertical velocity, so falling jumps (from Coyote Time) have the same kick.
@@ -167,8 +167,11 @@ public class PlayerController : MonoBehaviour
 
     public void OnInteract(InputAction.CallbackContext context)
     {
-        // Interact
-        StartCoroutine(ToggleInteractArea());
+        if (context.performed)
+        {
+            // Interact
+            StartCoroutine(ToggleInteractArea());
+        }
     }
 
     IEnumerator ToggleInteractArea()

@@ -3397,7 +3397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   owningLevel: {fileID: 2103156164}
   ModulesToPlace:
-  - {fileID: 5139579291111670621, guid: 78f22e1f16bb8e846a96621f5e6306cf, type: 3}
+  - {fileID: 949981361844720195, guid: 530875b88d677a64dad24bcab12e9b71, type: 3}
   - {fileID: 5139579291111670621, guid: 78f22e1f16bb8e846a96621f5e6306cf, type: 3}
   GameManager: {fileID: 370928588}
 --- !u!1 &642750376

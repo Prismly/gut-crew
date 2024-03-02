@@ -126,7 +126,7 @@ MonoBehaviour:
   maxFallSpeed: 20
   runAccel: 40
   dragAccel: 40
-  jumpImpulse: 20
+  jumpImpulse: 25
   gravScaleLow: 1
   gravScaleHigh: 3
   groundChecker: {fileID: 4382612527553407698}
@@ -433,3 +433,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c17e8c42c871a41ac4f8e8f23a7b76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InteractCooldown: 0.05

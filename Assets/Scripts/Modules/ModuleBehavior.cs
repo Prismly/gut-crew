@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class ModuleBehavior : MonoBehaviour
 {
     [SerializeField] private bool HasPair = false;
-    private GameObject OtherModule;
+    protected GameObject OtherModule;
 
     [SerializeField] private float ModuleCooldown = 1f;
     private float TimeUntilUsable;

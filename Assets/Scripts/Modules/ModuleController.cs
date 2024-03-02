@@ -10,7 +10,7 @@ public class ModuleController : MonoBehaviour
     [SerializeField, Tooltip("the game manager")] private MicroGameManager GameManager;
     private ObjectGrid grid;
 
-    private bool placingPair = false;
+    private bool secondInPair = false;
     private GameObject previousModule;
 
     private int moduleIndex = 0;
@@ -45,32 +45,47 @@ public class ModuleController : MonoBehaviour
                 {
                     droppedObject = true;
                     grid.transform.parent = transform.parent;
+
+                    ModuleBehavior behavior = grid.gameObject.GetComponent<ModuleBehavior>();
+
+                    // If this module is the second in a pair, assign pair references
+                    if (previousModule)
+                    {
+                        previousModule.GetComponent<ModuleBehavior>().SetOtherModule(grid.gameObject);
+                        behavior.SetOtherModule(previousModule);
+                        previousModule = null;
+                        Debug.Log("second in pair");
+                    }
+
+                    // Increment the module index unless this is the first of a pair
+                    if (secondInPair || !behavior.HasPairModule())
+                        moduleIndex++;
+
+                    // If this is the first of a pair, store the reference to the previous module
+                    else
+                        previousModule = grid.gameObject;
+
+                    // If this is a pair module, flip the boolean flag
+                    if (behavior.HasPairModule())
+                    {
+                        secondInPair = !secondInPair;
+                    }
+
+                    // If there are no more modules to place, delete the controller and end module placement
+                    if (moduleIndex >= ModulesToPlace.Length)
+                    {
+                        Debug.Log("Out of modules");
+                        GameManager.EndModulePlacement();
+                        Destroy(gameObject);
+                        return;
+                    }
+
+                    // Update the controller with the next module
                     GameObject newObject = Instantiate(ModulesToPlace[moduleIndex], transform);
                     grid = newObject.GetComponent<ObjectGrid>();
                     grid.SetParent(transform);
                     droppedObject = false;
                     grid.StartDragging();
-
-                    ModuleBehavior behavior;
-                    if (behavior = newObject.GetComponent<ModuleBehavior>())
-                    {
-                        if (behavior.HasPairModule())
-                        {
-
-                        }
-
-                        moduleIndex++;
-                        if (moduleIndex >= ModulesToPlace.Length)
-                        {
-                            Debug.Log("Out of modules");
-                            GameManager.EndModulePlacement();
-                            Destroy(gameObject);
-                        }
-                    }
-                    else
-                    {
-                        Debug.LogError("Placed Module has no Module Behavior");
-                    }
                 }
             }
         }
