@@ -8,9 +8,9 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
+  - LevelTile
   - Water
   - UI
-  - LevelTile
   - Terrain
   - PlayerSpawn
   - TerrainCheck
@@ -18,10 +18,6 @@ TagManager:
   - Wall
   - Player
   - Map
-  - 
-  - 
-  - 
-  - 
   - 
   - 
   - 
