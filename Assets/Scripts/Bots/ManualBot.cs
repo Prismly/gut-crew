@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class ManualBot : Bot
 {
-    void Update()
+    private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            IncrementDistance(2f);
-        }
+        if (Input.GetKeyDown(KeyCode.G))
+            ProcessInput(Limbs.ARM_L);
+        if (Input.GetKeyDown(KeyCode.H))
+            ProcessInput(Limbs.ARM_R);
+        if (Input.GetKeyDown(KeyCode.B))
+            ProcessInput(Limbs.LEG_L);
+        if (Input.GetKeyDown(KeyCode.N))
+            ProcessInput(Limbs.LEG_R);
+
+        base.Update();
     }
 }

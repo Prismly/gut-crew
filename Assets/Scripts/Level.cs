@@ -2,52 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// ALL THIS CODE IS SUBJECT TO CHANGE BASED ON HOW WE IMPLEMENT
-// THIS IS MORESO A PROOF OF CONCEPT FOR A SYSTEM
+// Singleton responsible for generating the common terrain for a leg of the race.
+// Then populates the bots' respective "Track" objects so they can be manipulated individually.
 public class Level : MonoBehaviour
 {
-    public enum ObstacleType
-    {
-        WALK,
-        CLIMB,
-        JUMP,
-        LIFT,
-        SWIM
-    }
+    [SerializeField] private Track[] tracks;
+    [SerializeField] private MovementScheme[] movementSchemes;
+    [SerializeField] private int segmentCount = 3;
 
-    // Node class for specifying any state we want the path to have
-    public class Node
-    {
-        Vector2 position;
-        ObstacleType obsType;
-
-        public Node(Vector2 position, ObstacleType obsType)
-        {
-            this.position = position;
-            this.obsType = obsType;
-        }
-    }
-
-    // The list of points that are the path the player will follow
-    private List<Node> path;
-
-    // By convention, [0] will be the player and [1] will be the computer
-    [SerializeField] private Vector2[] botOffs;
-    [SerializeField] private Bot[] bots;
-    [SerializeField] private GameObject botPref;
-
-    // Start is called before the first frame update
     void Start()
     {
-        foreach (Transform c in transform)
+        float totalDist = 0;
+        for (int i = 0; i < segmentCount; i++)
         {
-            path.Add(new Node(c.position, ObstacleType.WALK));
+            Vector2 prevEndPoint = Vector2.zero;
+            MovementScheme randScheme = movementSchemes[Random.Range(0, movementSchemes.Length)];
+            int randDist = Random.Range(3, 8);
+            totalDist += randDist;
+            foreach (Track t in tracks)
+            {
+                t.AppendSegment(randDist, randScheme);
+            }
         }
-
-
     }
 
-    // Update is called once per frame
     void Update()
     {
 
