@@ -8,19 +8,15 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
+  - LevelTile
   - Water
   - UI
-  - LevelTile
   - Terrain
   - PlayerSpawn
   - TerrainCheck
-  - Minimap
-  - Wall
+  - 
+  - 
   - Player
-  - Map
-  - 
-  - 
-  - 
   - 
   - 
   - 
@@ -44,4 +40,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BG
+    uniqueID: 1275001449
+    locked: 0
+  - name: FG
+    uniqueID: 2884542595
     locked: 0
