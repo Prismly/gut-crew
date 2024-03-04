@@ -555,7 +555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offset: {x: 0, y: 0, z: -10}
   objects:
-  - {fileID: 1705941365}
+  - {fileID: 4382612528013070876}
   - {fileID: 589730292}
 --- !u!1 &1028156389
 GameObject:
@@ -1280,3 +1280,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 791deeda14494cd448d269de5b9b4f08, type: 3}
+--- !u!1 &4382612528013070876 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4382612527566801774, guid: 791deeda14494cd448d269de5b9b4f08, type: 3}
+  m_PrefabInstance: {fileID: 4382612528013070875}
+  m_PrefabAsset: {fileID: 0}
