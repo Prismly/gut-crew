@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,6 +11,10 @@ public class ModuleController : MonoBehaviour
     [SerializeField, Tooltip("the game manager")] private MicroGameManager GameManager;
     private ObjectGrid grid;
 
+    [SerializeField] private TMP_Text ModuleName;
+    [SerializeField] private TMP_Text ModuleDescription;
+
+    private List<GameObject> Modules;
     private bool secondInPair = false;
     private GameObject previousModule;
 
@@ -27,10 +32,24 @@ public class ModuleController : MonoBehaviour
     private bool clickedVisible = false;
     private void Start()
     {
-        GameObject moduleGrid = Instantiate(ModulesToPlace[moduleIndex], transform);
+        Modules = new List<GameObject>();
+        foreach (GameObject obj in ModulesToPlace)
+        {
+            Modules.Add(obj);
+        }
+        InitializeObjectAtIndex();
+    }
+
+    private void InitializeObjectAtIndex()
+    {
+        GameObject moduleGrid = Instantiate(Modules[moduleIndex], transform);
         grid = moduleGrid.GetComponent<ObjectGrid>();
         grid.SetParent(transform);
         grid.StartDragging();
+
+        ModuleBehavior behavior = moduleGrid.GetComponent<ModuleBehavior>();
+        ModuleName.SetText(behavior.GetDisplayName());
+        ModuleDescription.SetText(behavior.GetDescription());
     }
 
     public void TryDrop(InputAction.CallbackContext ctx)
@@ -57,10 +76,12 @@ public class ModuleController : MonoBehaviour
                         Debug.Log("second in pair");
                     }
 
-                    // Increment the module index unless this is the first of a pair
+                    // Reset the module index and remove this element from the list unless this is the first of a pair
                     if (secondInPair || !behavior.HasPairModule())
-                        moduleIndex++;
-
+                    {
+                        Modules.RemoveAt(moduleIndex);
+                        moduleIndex = 0;
+                    }
                     // If this is the first of a pair, store the reference to the previous module
                     else
                         previousModule = grid.gameObject;
@@ -72,7 +93,7 @@ public class ModuleController : MonoBehaviour
                     }
 
                     // If there are no more modules to place, delete the controller and end module placement
-                    if (moduleIndex >= ModulesToPlace.Length)
+                    if (moduleIndex >= Modules.Count)
                     {
                         Debug.Log("Out of modules");
                         GameManager.EndModulePlacement();
@@ -81,11 +102,8 @@ public class ModuleController : MonoBehaviour
                     }
 
                     // Update the controller with the next module
-                    GameObject newObject = Instantiate(ModulesToPlace[moduleIndex], transform);
-                    grid = newObject.GetComponent<ObjectGrid>();
-                    grid.SetParent(transform);
+                    InitializeObjectAtIndex();
                     droppedObject = false;
-                    grid.StartDragging();
                 }
             }
         }
@@ -110,6 +128,28 @@ public class ModuleController : MonoBehaviour
         else
         {
             clickedVisible = false;
+        }
+    }
+
+    public void SelectNextModule(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed && previousModule == null)
+        {
+            Destroy(grid.gameObject);
+            moduleIndex = (moduleIndex + 1) % Modules.Count;
+            InitializeObjectAtIndex();
+        }
+    }
+
+    public void SelectPreviousModule(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed && previousModule == null)
+        {
+            Destroy(grid.gameObject);
+            moduleIndex -= 1;
+            if (moduleIndex < 0)
+                moduleIndex = Modules.Count - 1;
+            InitializeObjectAtIndex();
         }
     }
 

@@ -114,7 +114,7 @@ MonoBehaviour:
   colliderComponent: {fileID: 1289763482243526193}
   rendererComponent: {fileID: 4705754916459021934}
   defaultColor: {r: 1, g: 1, b: 1, a: 0.65882355}
-  highlightColor: {r: 0, g: 1, b: 1, a: 0.65882355}
+  highlightColor: {r: 0.15686275, g: 1, b: 0.972549, a: 0.65882355}
   errorColor: {r: 1, g: 0, b: 0, a: 0.65882355}
   upTile: {fileID: 5358689819400097624}
   downTile: {fileID: 0}
@@ -240,7 +240,7 @@ MonoBehaviour:
   colliderComponent: {fileID: 8324843369574792112}
   rendererComponent: {fileID: 6229135526822400220}
   defaultColor: {r: 1, g: 1, b: 1, a: 0.65882355}
-  highlightColor: {r: 0, g: 1, b: 1, a: 0.65882355}
+  highlightColor: {r: 0.15686275, g: 1, b: 0.972549, a: 0.65882355}
   errorColor: {r: 1, g: 0, b: 0, a: 0.65882355}
   upTile: {fileID: 0}
   downTile: {fileID: 793421973039390700}
@@ -450,7 +450,7 @@ MonoBehaviour:
   colliderComponent: {fileID: 696003209143726411}
   rendererComponent: {fileID: 3857639784541523333}
   defaultColor: {r: 1, g: 1, b: 1, a: 0.65882355}
-  highlightColor: {r: 0, g: 1, b: 1, a: 0.65882355}
+  highlightColor: {r: 0.15686275, g: 1, b: 0.972549, a: 0.65882355}
   errorColor: {r: 1, g: 0, b: 0, a: 0.65882355}
   upTile: {fileID: 0}
   downTile: {fileID: 2386106746648762226}
@@ -751,7 +751,7 @@ MonoBehaviour:
   colliderComponent: {fileID: 4305034514970231988}
   rendererComponent: {fileID: 6182561860723552183}
   defaultColor: {r: 1, g: 1, b: 1, a: 0.65882355}
-  highlightColor: {r: 0, g: 1, b: 1, a: 0.65882355}
+  highlightColor: {r: 0.15723264, g: 1, b: 0.97265184, a: 1}
   errorColor: {r: 1, g: 0, b: 0, a: 0.65882355}
   upTile: {fileID: 6253402350509804599}
   downTile: {fileID: 0}

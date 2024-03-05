@@ -4,6 +4,9 @@ using UnityEngine;
 
 public abstract class ModuleBehavior : MonoBehaviour
 {
+    [SerializeField] private string DisplayName;
+    [SerializeField] private string Description;
+
     [SerializeField] private bool HasPair = false;
     protected GameObject OtherModule;
 
@@ -31,6 +34,16 @@ public abstract class ModuleBehavior : MonoBehaviour
             IsUsable = true;
             ModuleSelf.SetActive(true);
         }
+    }
+
+    public string GetDisplayName()
+    {
+        return DisplayName;
+    }
+
+    public string GetDescription()
+    {
+        return Description;
     }
 
     public bool HasPairModule()

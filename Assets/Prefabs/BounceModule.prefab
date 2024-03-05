@@ -74,6 +74,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfc2868b2d2131442bc48e1775f487d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DisplayName: Bounce
+  Description: Allows you to jump in the air
   HasPair: 0
   ModuleCooldown: 0.75
   BounceImpulse: 30
