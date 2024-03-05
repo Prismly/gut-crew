@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b06c3cf902b86d46bb0e1f90943a784, type: 3}
   m_Name: Swim
   m_EditorClassIdentifier: 
+  environment: {fileID: 4977754831748647380, guid: 46c1aeec6194e4343bcb863ffd211c2d, type: 3}

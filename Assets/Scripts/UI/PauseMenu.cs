@@ -6,31 +6,34 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] private GameObject pauseMenu;
-    [SerializeField] private GameObject pauseButton;
     [SerializeField] private GameObject resumeButton;
     [SerializeField] private GameObject quitButton;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+    private bool isPaused = false;
 
     public void Menu()
     {
         SceneManager.LoadScene("Main Menu");
     }
 
+    public void TogglePause()
+    {
+        isPaused = !isPaused;
+        Time.timeScale = isPaused ? 0 : 1;
+        pauseMenu.SetActive(isPaused);
+    }
+
     public void PauseGame()
     {
+        isPaused = true;
         Time.timeScale = 0;
         pauseMenu.SetActive(true);
-        pauseButton.SetActive(false);
     }
-    public void ResumeMenu()
+
+    public void ResumeGame()
     {
+        isPaused = false;
         Time.timeScale = 1;
         pauseMenu.SetActive(false);
-        pauseButton.SetActive(true);
     }
 
     public void Quit()
