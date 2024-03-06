@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e734e38a8fa80ec44a28a1311f65e885, type: 3}
   m_Name: Walk
   m_EditorClassIdentifier: 
+  environment: {fileID: 8057202593666440762, guid: 9bbeb756fd5f8104a813124cf28627dc, type: 3}

@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
 {
     private BoxCollider2D myCollider;
     private Rigidbody2D myBody;
+    private Animator myAnimator;
+    [SerializeField] private Animator interactAnimator;
 
     private Vector2 currentInput = Vector2.zero;
     [Header("Running")]
@@ -44,6 +46,7 @@ public class PlayerController : MonoBehaviour
     {
         myCollider = GetComponent<BoxCollider2D>();
         myBody = GetComponent<Rigidbody2D>();
+        myAnimator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -155,6 +158,7 @@ public class PlayerController : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         currentInput = context.ReadValue<Vector2>();
+        myAnimator.SetBool("Walking", currentInput.x != 0);
     }
 
     public void OnJump(InputAction.CallbackContext context)
@@ -162,6 +166,8 @@ public class PlayerController : MonoBehaviour
         if (context.started && isGrounded != GroundedStates.AIRBORNE)
         {
             Jump();
+            myAnimator.SetBool("Grounded", false);
+            myAnimator.SetFloat("Vertical Velocity", 1);
         }
     }
 
@@ -170,6 +176,7 @@ public class PlayerController : MonoBehaviour
         if (context.performed)
         {
             // Interact
+            interactAnimator.SetTrigger("Bubble");
             StartCoroutine(ToggleInteractArea());
         }
     }
