@@ -18,6 +18,19 @@ public class Tile : MonoBehaviour
         }
     }
 
+    protected BoxCollider2D collider2DComponent;
+    public BoxCollider2D collider2D
+    {
+        get
+        {
+            if (!collider2DComponent)
+            {
+                collider2DComponent = GetComponent<BoxCollider2D>();
+            }
+            return collider2DComponent;
+        }
+    }
+
     [Header("Sprite rendering")]
 
     [SerializeField, Tooltip("sprite renderer component")]
@@ -34,13 +47,10 @@ public class Tile : MonoBehaviour
         }
     }
 
-    [SerializeField, Tooltip("default color")]
     protected Color defaultColor = Color.white;
 
-    [SerializeField, Tooltip("the highlighted color")]
     protected Color highlightColor = Color.cyan;
 
-    [SerializeField, Tooltip("the error color")]
     protected Color errorColor = Color.red;
 
     [Header("Adjacent tiles")]
@@ -133,7 +143,15 @@ public class Tile : MonoBehaviour
         {
             Debug.LogError("BASE TILE PREFAB DOES NOT HAVE TILE SCRIPT");
         }
-        newTile.transform.position = transform.position + new Vector3(0, newTileScript.collider.size.y, 0);
+        if (newTileScript.collider != null)
+        {
+            newTile.transform.position = transform.position + new Vector3(0, newTileScript.collider.size.y, 0);
+        }
+        else
+        {
+            newTile.transform.position = transform.position + new Vector3(0, newTileScript.collider2D.size.y, 0);
+        }
+
         newTileScript.down = this;
         up = newTileScript;
 
@@ -185,7 +203,16 @@ public class Tile : MonoBehaviour
         {
             Debug.LogError("BASE TILE PREFAB DOES NOT HAVE TILE SCRIPT");
         }
-        newTile.transform.position = transform.position + new Vector3(0, -newTileScript.collider.size.y, 0);
+
+        if (newTileScript.collider != null)
+        {
+            newTile.transform.position = transform.position + new Vector3(0, -newTileScript.collider.size.y, 0);
+        }
+        else
+        {
+            newTile.transform.position = transform.position + new Vector3(0, -newTileScript.collider2D.size.y, 0);
+        }
+
         newTileScript.up = this;
         down = newTileScript;
 
@@ -237,7 +264,15 @@ public class Tile : MonoBehaviour
         {
             Debug.LogError("BASE TILE PREFAB DOES NOT HAVE TILE SCRIPT");
         }
-        newTile.transform.position = transform.position + new Vector3(newTileScript.collider.size.x,0,0);
+
+        if (newTileScript.collider != null)
+        {
+            newTile.transform.position = transform.position + new Vector3(newTileScript.collider.size.x, 0, 0);
+        }
+        else
+        {
+            newTile.transform.position = transform.position + new Vector3(newTileScript.collider2D.size.x, 0, 0);
+        }
         newTileScript.left = this;
         right = newTileScript;
 
@@ -289,7 +324,15 @@ public class Tile : MonoBehaviour
         {
             Debug.LogError("BASE TILE PREFAB DOES NOT HAVE TILE SCRIPT");
         }
-        newTile.transform.position = transform.position + new Vector3(-newTileScript.collider.size.x,0,0);
+
+        if (newTileScript.collider != null)
+        {
+            newTile.transform.position = transform.position + new Vector3(-newTileScript.collider.size.x, 0, 0);
+        }
+        else
+        {
+            newTile.transform.position = transform.position + new Vector3(-newTileScript.collider2D.size.x, 0, 0);
+        }
         newTileScript.right = this;
         left = newTileScript;
 

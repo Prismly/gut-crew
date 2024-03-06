@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -200025946, guid: 8075331a6031ba14abde8ecf9dce2145, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.65882355}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -113,9 +113,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colliderComponent: {fileID: 7847554158648968191}
   rendererComponent: {fileID: 7038028628595592102}
-  defaultColor: {r: 1, g: 1, b: 1, a: 0.65882355}
-  highlightColor: {r: 0, g: 1, b: 1, a: 0.65882355}
-  errorColor: {r: 1, g: 0, b: 0, a: 0.65882355}
   upTile: {fileID: 0}
   downTile: {fileID: 6324719059450153435}
   leftTile: {fileID: 0}
@@ -202,7 +199,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -200025946, guid: 8075331a6031ba14abde8ecf9dce2145, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.65882355}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -239,9 +236,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colliderComponent: {fileID: 8014552954477822084}
   rendererComponent: {fileID: 2747735821624664832}
-  defaultColor: {r: 1, g: 1, b: 1, a: 0.65882355}
-  highlightColor: {r: 0, g: 1, b: 1, a: 0.65882355}
-  errorColor: {r: 1, g: 0, b: 0, a: 0.65882355}
   upTile: {fileID: 2346316085748711581}
   downTile: {fileID: 0}
   leftTile: {fileID: 6324719059450153435}
@@ -328,7 +322,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -200025946, guid: 8075331a6031ba14abde8ecf9dce2145, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.65882355}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -365,9 +359,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colliderComponent: {fileID: 3681404794323040789}
   rendererComponent: {fileID: 2509828455837801024}
-  defaultColor: {r: 1, g: 1, b: 1, a: 0.65882355}
-  highlightColor: {r: 0, g: 1, b: 1, a: 0.65882355}
-  errorColor: {r: 1, g: 0, b: 0, a: 0.65882355}
   upTile: {fileID: 6668098341169569104}
   downTile: {fileID: 0}
   leftTile: {fileID: 0}
@@ -454,7 +445,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -200025946, guid: 8075331a6031ba14abde8ecf9dce2145, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.65882355}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -491,9 +482,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colliderComponent: {fileID: 2368969717212494100}
   rendererComponent: {fileID: 6394777850986660498}
-  defaultColor: {r: 1, g: 1, b: 1, a: 0.65882355}
-  highlightColor: {r: 0, g: 1, b: 1, a: 0.65882355}
-  errorColor: {r: 1, g: 0, b: 0, a: 0.65882355}
   upTile: {fileID: 0}
   downTile: {fileID: 6117177723882236101}
   leftTile: {fileID: 6668098341169569104}

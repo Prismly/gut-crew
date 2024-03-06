@@ -135,6 +135,17 @@
                 },
                 {
                     "name": "",
+                    "id": "796f5103-eb20-4396-bf43-e742b1b94a33",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "P1 Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "76ee58b9-13ec-49a2-9421-dcb6765d14ae",
                     "path": "<Keyboard>/leftShift",
                     "interactions": "",
@@ -269,8 +280,30 @@
                 },
                 {
                     "name": "",
+                    "id": "29a949b2-1620-44d6-9281-260d87346e87",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "P2 Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "9206f30f-330f-476c-a522-00badfa68bb4",
                     "path": "<Keyboard>/period",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "P2 Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "59b94ec6-70e0-4ac0-b75a-ee4caf65143e",
+                    "path": "<Keyboard>/rightShift",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

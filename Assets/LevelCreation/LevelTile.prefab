@@ -20,16 +20,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -200025946, guid: 8075331a6031ba14abde8ecf9dce2145, type: 3}
     - target: {fileID: 3641694336279801582, guid: be779bec59d44bf41887ee84b989e28d, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3641694336279801582, guid: be779bec59d44bf41887ee84b989e28d, type: 3}
       propertyPath: m_Color.b
-      value: 0.654902
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3641694336279801582, guid: be779bec59d44bf41887ee84b989e28d, type: 3}
       propertyPath: m_Color.g
-      value: 0.6313726
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3641694336279801582, guid: be779bec59d44bf41887ee84b989e28d, type: 3}
       propertyPath: m_Color.r
-      value: 0.6156863
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5422084037602569866, guid: be779bec59d44bf41887ee84b989e28d, type: 3}
       propertyPath: m_RootOrder
@@ -109,9 +113,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colliderComponent: {fileID: 0}
   rendererComponent: {fileID: 1890983125433432411}
-  defaultColor: {r: 0.6156863, g: 0.6313726, b: 0.654902, a: 0.32941177}
-  highlightColor: {r: 0, g: 1, b: 1, a: 0.32941177}
-  errorColor: {r: 1, g: 0, b: 0, a: 0.32941177}
   upTile: {fileID: 0}
   downTile: {fileID: 0}
   leftTile: {fileID: 0}

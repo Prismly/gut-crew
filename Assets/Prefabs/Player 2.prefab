@@ -157,6 +157,7 @@ GameObject:
   - component: {fileID: 7196807514440265787}
   - component: {fileID: 7196807514440265786}
   - component: {fileID: 7196807514440265783}
+  - component: {fileID: 9132244089892276359}
   m_Layer: 11
   m_Name: Player 2
   m_TagString: Untagged
@@ -336,6 +337,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: c3791830-717f-443b-9089-b77f6de85745
     m_ActionName: UI/Pause[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d27a7dbb-614e-4fe2-8f1b-9628ed422c91
+    m_ActionName: ModuleBuilder/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 69d30708-49fc-4ce0-95a4-f2e8d15337dd
+    m_ActionName: ModuleBuilder/Place[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2a89a630-07a4-4c2c-832f-1b3aa4ac33d0
+    m_ActionName: ModuleBuilder/Next Module[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2cb04fe4-5ab3-4e10-937f-50669bc78967
+    m_ActionName: ModuleBuilder/Previous Module[/Keyboard/q]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player 2
@@ -440,6 +457,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!95 &9132244089892276359
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7196807514440265785}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 25351437552ed7d4da7e230c7add5d4c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &9023295572702875085
 GameObject:
   m_ObjectHideFlags: 0
