@@ -33,7 +33,7 @@ public class Track : MonoBehaviour
 
     public Vector3 GetPositionAtDist(float targetDist)
     {
-        Debug.Log(targetDist);
+        //Debug.Log(targetDist);
         TrackSegment segment = GetSegmentAtDist(targetDist);
 
         float inVal = targetDist - segment.StartDist;

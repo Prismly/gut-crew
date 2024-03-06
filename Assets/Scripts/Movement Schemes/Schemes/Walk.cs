@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "MovementSchemes/Walk")]
 public class Walk : MovementScheme
 {
-    public override Responses ProcessLimbData(LimbData inputData)
+    public override Responses ProcessLimbData(LimbData inputData, Bot targetBot)
     {
         // Only accept Leg inputs.
         if (inputData.MostRecentActive != Bot.Limbs.LEG_L && inputData.MostRecentActive != Bot.Limbs.LEG_R)
@@ -18,9 +18,14 @@ public class Walk : MovementScheme
 
         // If the activated leg is NOT the most recently activated leg (i.e. the back leg was moved), move.
         if (inputData.MostRecentActive != mostRecentLeg)
+        {
+            Debug.Log("Stepping " + ("Step " + (mostRecentLeg == Bot.Limbs.LEG_L ? "Left" : "Right")));
+            targetBot.GetAnimator().SetTrigger("Step " + (mostRecentLeg == Bot.Limbs.LEG_L ? "Left" : "Right"));
             return Responses.MOVE;
+        }
+            
 
         // If the activated leg IS the most recently activated leg (i.e. the front leg was moved), stagger.
-        return Responses.STAGGER;
+        return Responses.NONE;
     }
 }

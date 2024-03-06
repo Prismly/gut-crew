@@ -8,5 +8,5 @@ public abstract class MovementScheme : ScriptableObject
 
     public GameObject environment;
 
-    public abstract Responses ProcessLimbData(LimbData inputData);
+    public abstract Responses ProcessLimbData(LimbData inputData, Bot targetBot);
 }

@@ -19,6 +19,7 @@ public abstract class Bot : MonoBehaviour
     [SerializeField] protected float moveStep = 1f;
     [SerializeField] protected float moveSpeed = 2f;
     [SerializeField] protected float snapThreshold = 0.1f;
+    [SerializeField] private Animator myAnimator;
 
     protected void Update()
     {
@@ -52,7 +53,7 @@ public abstract class Bot : MonoBehaviour
         // Ask the current TrackSegment what this information means for the robot.
         // For example, "Move", "Don't Move", or "Stagger".
         MovementScheme currentMoveScheme = myTrack.GetSegmentAtDist(CurrentDist).MoveScheme;
-        MovementScheme.Responses response = currentMoveScheme.ProcessLimbData(limbData);
+        MovementScheme.Responses response = currentMoveScheme.ProcessLimbData(limbData, this);
 
         // Now, act on the response given by TrackSegment.
         if (response == MovementScheme.Responses.MOVE)
@@ -78,5 +79,10 @@ public abstract class Bot : MonoBehaviour
     {
         newVal = Mathf.Clamp(newVal, 0, myTrack.TrackLength);
         TargetDist = newVal;
+    }
+
+    public Animator GetAnimator()
+    {
+        return myAnimator;
     }
 }
