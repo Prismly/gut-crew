@@ -9,14 +9,16 @@ public abstract class Bot : MonoBehaviour
     // Head and Torso may go unused, depending on scope.
     public enum Limbs { HEAD, TORSO, ARM_L, ARM_R, LEG_L, LEG_R }
 
-    [SerializeField] private Track myTrack;
-    private LimbData limbData = new LimbData();
+    [SerializeField] protected GameManager gameManager;
+
+    [SerializeField] protected Track myTrack;
+    protected LimbData limbData = new LimbData();
     public float CurrentDist { get; set; }
     public float TargetDist { get; set; }
 
-    [SerializeField] private float moveStep = 1f;
-    [SerializeField] private float moveSpeed = 2f;
-    [SerializeField] private float snapThreshold = 0.1f;
+    [SerializeField] protected float moveStep = 1f;
+    [SerializeField] protected float moveSpeed = 2f;
+    [SerializeField] protected float snapThreshold = 0.1f;
 
     protected void Update()
     {
@@ -34,6 +36,8 @@ public abstract class Bot : MonoBehaviour
         //Debug.Log(myTrack.GetPositionAtDist(CurrentDist));
         transform.position = myTrack.GetPositionAtDist(CurrentDist);
     }
+
+    protected abstract void WinBehavior();
 
     public void ProcessInput(Limbs activated)
     {
@@ -60,6 +64,10 @@ public abstract class Bot : MonoBehaviour
         {
             // Animate stagger.
             SetTargetDistance(TargetDist - (moveStep / 2));
+        }
+        if (response == MovementScheme.Responses.WIN)
+        {
+            WinBehavior();
         }
 
         // Update the "Last Activated At" dictionary with the new input, for next input.

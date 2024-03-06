@@ -1,5 +1,138 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &512343026312037650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5293616696059366676}
+  - component: {fileID: 9215136090178205000}
+  - component: {fileID: 5178262594150960422}
+  - component: {fileID: 2624675754250110721}
+  m_Layer: 6
+  m_Name: WallTile(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5293616696059366676
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512343026312037650}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 27, y: -13, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2845181656936423682}
+  m_RootOrder: 356
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &9215136090178205000
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512343026312037650}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1410424701
+  m_SortingLayer: 4
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 708411790, guid: 8075331a6031ba14abde8ecf9dce2145, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.16, y: 0.16}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!61 &5178262594150960422
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512343026312037650}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 1
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &2624675754250110721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512343026312037650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5118e4e3c8080146ae24d61d73cc0fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colliderComponent: {fileID: 0}
+  rendererComponent: {fileID: 9215136090178205000}
+  upTile: {fileID: 0}
+  downTile: {fileID: 0}
+  leftTile: {fileID: 2845181655673496313}
+  rightTile: {fileID: 0}
+  attachedTile: {fileID: 0}
+  owningGrid: {fileID: 2845181656936423683}
+  numTilesToSpawn: 1
 --- !u!1 &2845181654815195815
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,7 +145,7 @@ GameObject:
   - component: {fileID: 2845181654815195801}
   - component: {fileID: 2845181654815195802}
   - component: {fileID: 2845181654815195800}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +231,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,7 +278,7 @@ GameObject:
   - component: {fileID: 2845181654824051033}
   - component: {fileID: 2845181654824051034}
   - component: {fileID: 2845181654824051032}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,7 +364,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,7 +411,7 @@ GameObject:
   - component: {fileID: 2845181654825363443}
   - component: {fileID: 2845181654825363444}
   - component: {fileID: 2845181654825363442}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -364,7 +497,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -411,7 +544,7 @@ GameObject:
   - component: {fileID: 2845181654827534595}
   - component: {fileID: 2845181654827534596}
   - component: {fileID: 2845181654827534594}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -497,7 +630,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -544,7 +677,7 @@ GameObject:
   - component: {fileID: 2845181654827620869}
   - component: {fileID: 2845181654827620870}
   - component: {fileID: 2845181654827620868}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -630,7 +763,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -677,7 +810,7 @@ GameObject:
   - component: {fileID: 2845181654834891495}
   - component: {fileID: 2845181654834891480}
   - component: {fileID: 2845181654834891494}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -763,7 +896,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -810,7 +943,7 @@ GameObject:
   - component: {fileID: 2845181654840502190}
   - component: {fileID: 2845181654840502191}
   - component: {fileID: 2845181654840502189}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -896,7 +1029,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -943,7 +1076,7 @@ GameObject:
   - component: {fileID: 2845181654841848316}
   - component: {fileID: 2845181654841848317}
   - component: {fileID: 2845181654841848315}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1029,7 +1162,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -1076,7 +1209,7 @@ GameObject:
   - component: {fileID: 2845181654842975338}
   - component: {fileID: 2845181654842975339}
   - component: {fileID: 2845181654842975337}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1162,7 +1295,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -1209,7 +1342,7 @@ GameObject:
   - component: {fileID: 2845181654845298792}
   - component: {fileID: 2845181654845298793}
   - component: {fileID: 2845181654845298807}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1295,7 +1428,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -1342,7 +1475,7 @@ GameObject:
   - component: {fileID: 2845181654854325639}
   - component: {fileID: 2845181654854325752}
   - component: {fileID: 2845181654854325638}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1428,7 +1561,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -1582,7 +1715,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -1608,7 +1741,7 @@ GameObject:
   - component: {fileID: 2845181654884948616}
   - component: {fileID: 2845181654884948617}
   - component: {fileID: 2845181654884948631}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1694,7 +1827,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -1741,7 +1874,7 @@ GameObject:
   - component: {fileID: 2845181654895647837}
   - component: {fileID: 2845181654895647838}
   - component: {fileID: 2845181654895647836}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1827,7 +1960,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -1981,7 +2114,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -2114,7 +2247,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -2140,7 +2273,7 @@ GameObject:
   - component: {fileID: 2845181654924406466}
   - component: {fileID: 2845181654924406467}
   - component: {fileID: 2845181654924406465}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2226,7 +2359,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -2273,7 +2406,7 @@ GameObject:
   - component: {fileID: 2845181654926308718}
   - component: {fileID: 2845181654926308719}
   - component: {fileID: 2845181654926308717}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2359,7 +2492,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -2513,7 +2646,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -2539,7 +2672,7 @@ GameObject:
   - component: {fileID: 2845181654933555856}
   - component: {fileID: 2845181654933555857}
   - component: {fileID: 2845181654933555871}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2625,7 +2758,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -2779,7 +2912,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -2805,7 +2938,7 @@ GameObject:
   - component: {fileID: 2845181654940629082}
   - component: {fileID: 2845181654940629083}
   - component: {fileID: 2845181654940629081}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2891,7 +3024,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -2938,7 +3071,7 @@ GameObject:
   - component: {fileID: 2845181654953912921}
   - component: {fileID: 2845181654953912920}
   - component: {fileID: 2845181654953912935}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3024,7 +3157,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -3071,7 +3204,7 @@ GameObject:
   - component: {fileID: 2845181654968535911}
   - component: {fileID: 2845181654968535896}
   - component: {fileID: 2845181654968535910}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3157,7 +3290,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -3311,7 +3444,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -3337,7 +3470,7 @@ GameObject:
   - component: {fileID: 2845181654990585094}
   - component: {fileID: 2845181654990585095}
   - component: {fileID: 2845181654990585093}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3423,7 +3556,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -3470,7 +3603,7 @@ GameObject:
   - component: {fileID: 2845181654991377081}
   - component: {fileID: 2845181654991377082}
   - component: {fileID: 2845181654991377080}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3556,7 +3689,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -3603,7 +3736,7 @@ GameObject:
   - component: {fileID: 2845181654996059859}
   - component: {fileID: 2845181654996059860}
   - component: {fileID: 2845181654996059858}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3689,7 +3822,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -3843,7 +3976,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -3869,7 +4002,7 @@ GameObject:
   - component: {fileID: 2845181654997715073}
   - component: {fileID: 2845181654997715074}
   - component: {fileID: 2845181654997715072}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3955,7 +4088,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -4002,7 +4135,7 @@ GameObject:
   - component: {fileID: 2845181655000637068}
   - component: {fileID: 2845181655000637069}
   - component: {fileID: 2845181655000637067}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4088,7 +4221,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -4135,7 +4268,7 @@ GameObject:
   - component: {fileID: 2845181655004250234}
   - component: {fileID: 2845181655004250235}
   - component: {fileID: 2845181655004250233}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4221,7 +4354,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -4268,7 +4401,7 @@ GameObject:
   - component: {fileID: 2845181655009256430}
   - component: {fileID: 2845181655009256431}
   - component: {fileID: 2845181655009256429}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4354,7 +4487,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -4508,7 +4641,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -4534,7 +4667,7 @@ GameObject:
   - component: {fileID: 2845181655020692023}
   - component: {fileID: 2845181655020692008}
   - component: {fileID: 2845181655020692022}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4620,7 +4753,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -4667,7 +4800,7 @@ GameObject:
   - component: {fileID: 2845181655022412521}
   - component: {fileID: 2845181655022412522}
   - component: {fileID: 2845181655022412520}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4753,7 +4886,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -4800,7 +4933,7 @@ GameObject:
   - component: {fileID: 2845181655023918311}
   - component: {fileID: 2845181655023918296}
   - component: {fileID: 2845181655023918310}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4886,7 +5019,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -4933,7 +5066,7 @@ GameObject:
   - component: {fileID: 2845181655026073840}
   - component: {fileID: 2845181655026073841}
   - component: {fileID: 2845181655026073855}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5019,7 +5152,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -5066,7 +5199,7 @@ GameObject:
   - component: {fileID: 2845181655030876773}
   - component: {fileID: 2845181655030876774}
   - component: {fileID: 2845181655030876772}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5152,7 +5285,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -5306,7 +5439,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -5332,7 +5465,7 @@ GameObject:
   - component: {fileID: 2845181655041318076}
   - component: {fileID: 2845181655041318075}
   - component: {fileID: 2845181655041318074}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5418,7 +5551,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -5465,7 +5598,7 @@ GameObject:
   - component: {fileID: 2845181655042942457}
   - component: {fileID: 2845181655042942458}
   - component: {fileID: 2845181655042942456}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5551,7 +5684,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -5598,7 +5731,7 @@ GameObject:
   - component: {fileID: 2845181655048154167}
   - component: {fileID: 2845181655048154152}
   - component: {fileID: 2845181655048154166}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5684,7 +5817,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -5731,7 +5864,7 @@ GameObject:
   - component: {fileID: 2845181655050759408}
   - component: {fileID: 2845181655050759409}
   - component: {fileID: 2845181655050759423}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5817,7 +5950,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -5864,7 +5997,7 @@ GameObject:
   - component: {fileID: 2845181655053089518}
   - component: {fileID: 2845181655053089519}
   - component: {fileID: 2845181655053089517}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5950,7 +6083,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -5997,7 +6130,7 @@ GameObject:
   - component: {fileID: 2845181655053587564}
   - component: {fileID: 2845181655053587565}
   - component: {fileID: 2845181655053587563}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6083,7 +6216,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -6130,7 +6263,7 @@ GameObject:
   - component: {fileID: 2845181655056297502}
   - component: {fileID: 2845181655056297503}
   - component: {fileID: 2845181655056297501}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6216,7 +6349,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -6263,7 +6396,7 @@ GameObject:
   - component: {fileID: 2845181655068357975}
   - component: {fileID: 2845181655068357960}
   - component: {fileID: 2845181655068357974}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6349,7 +6482,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -6396,7 +6529,7 @@ GameObject:
   - component: {fileID: 2845181655081995725}
   - component: {fileID: 2845181655081995726}
   - component: {fileID: 2845181655081995724}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6482,7 +6615,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -6529,7 +6662,7 @@ GameObject:
   - component: {fileID: 2845181655089277891}
   - component: {fileID: 2845181655089277892}
   - component: {fileID: 2845181655089277890}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6615,7 +6748,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -6662,7 +6795,7 @@ GameObject:
   - component: {fileID: 2845181655089539080}
   - component: {fileID: 2845181655089539081}
   - component: {fileID: 2845181655089539095}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6748,7 +6881,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -6795,7 +6928,7 @@ GameObject:
   - component: {fileID: 2845181655090755266}
   - component: {fileID: 2845181655090755267}
   - component: {fileID: 2845181655090755265}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6881,7 +7014,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -6928,7 +7061,7 @@ GameObject:
   - component: {fileID: 2845181655093206439}
   - component: {fileID: 2845181655093206424}
   - component: {fileID: 2845181655093206438}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7014,7 +7147,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -7061,7 +7194,7 @@ GameObject:
   - component: {fileID: 2845181655096699948}
   - component: {fileID: 2845181655096699949}
   - component: {fileID: 2845181655096699947}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7147,7 +7280,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -7194,7 +7327,7 @@ GameObject:
   - component: {fileID: 2845181655109025831}
   - component: {fileID: 2845181655109025816}
   - component: {fileID: 2845181655109025830}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7280,7 +7413,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -7327,7 +7460,7 @@ GameObject:
   - component: {fileID: 2845181655109789669}
   - component: {fileID: 2845181655109789670}
   - component: {fileID: 2845181655109789668}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7413,7 +7546,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -7460,7 +7593,7 @@ GameObject:
   - component: {fileID: 2845181655114888011}
   - component: {fileID: 2845181655114888012}
   - component: {fileID: 2845181655114888010}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7546,7 +7679,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -7593,7 +7726,7 @@ GameObject:
   - component: {fileID: 2845181655116277031}
   - component: {fileID: 2845181655116277016}
   - component: {fileID: 2845181655116277030}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7679,7 +7812,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -7726,7 +7859,7 @@ GameObject:
   - component: {fileID: 2845181655116598586}
   - component: {fileID: 2845181655116598587}
   - component: {fileID: 2845181655116598585}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7812,7 +7945,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -7859,7 +7992,7 @@ GameObject:
   - component: {fileID: 2845181655117566486}
   - component: {fileID: 2845181655117566487}
   - component: {fileID: 2845181655117566485}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7945,7 +8078,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -7992,7 +8125,7 @@ GameObject:
   - component: {fileID: 2845181655136495791}
   - component: {fileID: 2845181655136495790}
   - component: {fileID: 2845181655136495789}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8078,7 +8211,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -8125,7 +8258,7 @@ GameObject:
   - component: {fileID: 2845181655139638104}
   - component: {fileID: 2845181655139638105}
   - component: {fileID: 2845181655139638119}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8211,7 +8344,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -8258,7 +8391,7 @@ GameObject:
   - component: {fileID: 2845181655141624541}
   - component: {fileID: 2845181655141624542}
   - component: {fileID: 2845181655141624540}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8344,7 +8477,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -8391,7 +8524,7 @@ GameObject:
   - component: {fileID: 2845181655150553744}
   - component: {fileID: 2845181655150553745}
   - component: {fileID: 2845181655150553759}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8477,7 +8610,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -8631,7 +8764,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -8764,7 +8897,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -8790,7 +8923,7 @@ GameObject:
   - component: {fileID: 2845181655163942772}
   - component: {fileID: 2845181655163942773}
   - component: {fileID: 2845181655163942771}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8876,7 +9009,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -8923,7 +9056,7 @@ GameObject:
   - component: {fileID: 2845181655170360154}
   - component: {fileID: 2845181655170360155}
   - component: {fileID: 2845181655170360153}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9009,7 +9142,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -9163,7 +9296,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -9189,7 +9322,7 @@ GameObject:
   - component: {fileID: 2845181655184941811}
   - component: {fileID: 2845181655184941812}
   - component: {fileID: 2845181655184941810}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9275,7 +9408,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -9322,7 +9455,7 @@ GameObject:
   - component: {fileID: 2845181655190313182}
   - component: {fileID: 2845181655190313183}
   - component: {fileID: 2845181655190313181}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9408,7 +9541,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -9455,7 +9588,7 @@ GameObject:
   - component: {fileID: 2845181655191423482}
   - component: {fileID: 2845181655191423483}
   - component: {fileID: 2845181655191423481}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9541,7 +9674,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -9588,7 +9721,7 @@ GameObject:
   - component: {fileID: 2845181655192949394}
   - component: {fileID: 2845181655192949395}
   - component: {fileID: 2845181655192949393}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9674,7 +9807,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -9721,7 +9854,7 @@ GameObject:
   - component: {fileID: 2845181655199837901}
   - component: {fileID: 2845181655199837902}
   - component: {fileID: 2845181655199837900}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9807,7 +9940,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -9854,7 +9987,7 @@ GameObject:
   - component: {fileID: 2845181655205569580}
   - component: {fileID: 2845181655205569581}
   - component: {fileID: 2845181655205569579}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9940,7 +10073,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -10094,7 +10227,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -10120,7 +10253,7 @@ GameObject:
   - component: {fileID: 2845181655206591227}
   - component: {fileID: 2845181655206591228}
   - component: {fileID: 2845181655206591226}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10206,7 +10339,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -10360,7 +10493,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -10386,7 +10519,7 @@ GameObject:
   - component: {fileID: 2845181655209818808}
   - component: {fileID: 2845181655209818809}
   - component: {fileID: 2845181655209817415}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10472,7 +10605,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -10519,7 +10652,7 @@ GameObject:
   - component: {fileID: 2845181655225762530}
   - component: {fileID: 2845181655225762529}
   - component: {fileID: 2845181655225762528}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10605,7 +10738,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -10652,7 +10785,7 @@ GameObject:
   - component: {fileID: 2845181655226208209}
   - component: {fileID: 2845181655226208210}
   - component: {fileID: 2845181655226208208}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10738,7 +10871,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -10785,7 +10918,7 @@ GameObject:
   - component: {fileID: 2845181655257039825}
   - component: {fileID: 2845181655257039826}
   - component: {fileID: 2845181655257039824}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10871,7 +11004,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -10918,7 +11051,7 @@ GameObject:
   - component: {fileID: 2845181655262636723}
   - component: {fileID: 2845181655262636724}
   - component: {fileID: 2845181655262636722}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11004,7 +11137,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -11051,7 +11184,7 @@ GameObject:
   - component: {fileID: 2845181655266101963}
   - component: {fileID: 2845181655266101964}
   - component: {fileID: 2845181655266101962}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11137,7 +11270,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -11184,7 +11317,7 @@ GameObject:
   - component: {fileID: 2845181655276702870}
   - component: {fileID: 2845181655276702871}
   - component: {fileID: 2845181655276702869}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11270,7 +11403,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -11317,7 +11450,7 @@ GameObject:
   - component: {fileID: 2845181655286135917}
   - component: {fileID: 2845181655286135918}
   - component: {fileID: 2845181655286135916}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11403,7 +11536,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -11450,7 +11583,7 @@ GameObject:
   - component: {fileID: 2845181655287849161}
   - component: {fileID: 2845181655287849162}
   - component: {fileID: 2845181655287849160}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11536,7 +11669,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -11583,7 +11716,7 @@ GameObject:
   - component: {fileID: 2845181655295241301}
   - component: {fileID: 2845181655295241302}
   - component: {fileID: 2845181655295241300}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11669,7 +11802,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -11716,7 +11849,7 @@ GameObject:
   - component: {fileID: 2845181655309217703}
   - component: {fileID: 2845181655309217688}
   - component: {fileID: 2845181655309217702}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11802,7 +11935,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -11849,7 +11982,7 @@ GameObject:
   - component: {fileID: 2845181655311001374}
   - component: {fileID: 2845181655311001375}
   - component: {fileID: 2845181655311001373}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11935,7 +12068,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -12089,7 +12222,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -12115,7 +12248,7 @@ GameObject:
   - component: {fileID: 2845181655327875225}
   - component: {fileID: 2845181655327875226}
   - component: {fileID: 2845181655327875224}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12201,7 +12334,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -12248,7 +12381,7 @@ GameObject:
   - component: {fileID: 2845181655346624188}
   - component: {fileID: 2845181655346624189}
   - component: {fileID: 2845181655346624187}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12334,7 +12467,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -12381,7 +12514,7 @@ GameObject:
   - component: {fileID: 2845181655356232564}
   - component: {fileID: 2845181655356232565}
   - component: {fileID: 2845181655356232563}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12467,7 +12600,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -12621,7 +12754,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -12647,7 +12780,7 @@ GameObject:
   - component: {fileID: 2845181655369490749}
   - component: {fileID: 2845181655369490750}
   - component: {fileID: 2845181655369490748}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12733,7 +12866,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -12780,7 +12913,7 @@ GameObject:
   - component: {fileID: 2845181655394216800}
   - component: {fileID: 2845181655394216801}
   - component: {fileID: 2845181655394216815}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12866,7 +12999,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -12913,7 +13046,7 @@ GameObject:
   - component: {fileID: 2845181655394228240}
   - component: {fileID: 2845181655394228241}
   - component: {fileID: 2845181655394228255}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12999,7 +13132,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -13046,7 +13179,7 @@ GameObject:
   - component: {fileID: 2845181655404026131}
   - component: {fileID: 2845181655404026132}
   - component: {fileID: 2845181655404026130}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13132,7 +13265,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -13179,7 +13312,7 @@ GameObject:
   - component: {fileID: 2845181655405481866}
   - component: {fileID: 2845181655405481867}
   - component: {fileID: 2845181655405481865}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13265,7 +13398,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -13312,7 +13445,7 @@ GameObject:
   - component: {fileID: 2845181655408363034}
   - component: {fileID: 2845181655408363035}
   - component: {fileID: 2845181655408363033}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13398,7 +13531,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -13445,7 +13578,7 @@ GameObject:
   - component: {fileID: 2845181655416841987}
   - component: {fileID: 2845181655416841988}
   - component: {fileID: 2845181655416841986}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13531,7 +13664,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -13578,7 +13711,7 @@ GameObject:
   - component: {fileID: 2845181655425506835}
   - component: {fileID: 2845181655425506836}
   - component: {fileID: 2845181655425506834}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13664,7 +13797,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -13711,7 +13844,7 @@ GameObject:
   - component: {fileID: 2845181655427265345}
   - component: {fileID: 2845181655427265346}
   - component: {fileID: 2845181655427265344}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13797,7 +13930,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -13951,7 +14084,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -13977,7 +14110,7 @@ GameObject:
   - component: {fileID: 2845181655446705912}
   - component: {fileID: 2845181655446705913}
   - component: {fileID: 2845181655446705799}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14063,7 +14196,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -14217,7 +14350,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -14243,7 +14376,7 @@ GameObject:
   - component: {fileID: 2845181655463171363}
   - component: {fileID: 2845181655463171364}
   - component: {fileID: 2845181655463171362}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14329,7 +14462,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -14376,7 +14509,7 @@ GameObject:
   - component: {fileID: 2845181655467013657}
   - component: {fileID: 2845181655467013658}
   - component: {fileID: 2845181655467013656}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14462,7 +14595,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -14509,7 +14642,7 @@ GameObject:
   - component: {fileID: 2845181655475937536}
   - component: {fileID: 2845181655475937537}
   - component: {fileID: 2845181655475937551}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14595,7 +14728,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -14642,7 +14775,7 @@ GameObject:
   - component: {fileID: 2845181655488618446}
   - component: {fileID: 2845181655488618447}
   - component: {fileID: 2845181655488618445}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14728,7 +14861,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -14882,7 +15015,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -15015,7 +15148,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -15041,7 +15174,7 @@ GameObject:
   - component: {fileID: 2845181655515093385}
   - component: {fileID: 2845181655515093386}
   - component: {fileID: 2845181655515093384}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15127,7 +15260,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -15174,7 +15307,7 @@ GameObject:
   - component: {fileID: 2845181655518360251}
   - component: {fileID: 2845181655518360252}
   - component: {fileID: 2845181655518360250}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15260,7 +15393,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -15307,7 +15440,7 @@ GameObject:
   - component: {fileID: 2845181655525720169}
   - component: {fileID: 2845181655525720170}
   - component: {fileID: 2845181655525720168}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15393,7 +15526,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -15440,7 +15573,7 @@ GameObject:
   - component: {fileID: 2845181655533726422}
   - component: {fileID: 2845181655533726423}
   - component: {fileID: 2845181655533726421}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15526,7 +15659,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -15680,7 +15813,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -15706,7 +15839,7 @@ GameObject:
   - component: {fileID: 2845181655543215033}
   - component: {fileID: 2845181655543215034}
   - component: {fileID: 2845181655543215032}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15792,7 +15925,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -15839,7 +15972,7 @@ GameObject:
   - component: {fileID: 2845181655546175038}
   - component: {fileID: 2845181655546175039}
   - component: {fileID: 2845181655546175037}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15925,7 +16058,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -15972,7 +16105,7 @@ GameObject:
   - component: {fileID: 2845181655547629065}
   - component: {fileID: 2845181655547629066}
   - component: {fileID: 2845181655547629064}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16058,7 +16191,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -16105,7 +16238,7 @@ GameObject:
   - component: {fileID: 2845181655548195826}
   - component: {fileID: 2845181655548195827}
   - component: {fileID: 2845181655548195825}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16191,7 +16324,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -16238,7 +16371,7 @@ GameObject:
   - component: {fileID: 2845181655552179814}
   - component: {fileID: 2845181655552179815}
   - component: {fileID: 2845181655552179813}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16324,7 +16457,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -16371,7 +16504,7 @@ GameObject:
   - component: {fileID: 2845181655562525847}
   - component: {fileID: 2845181655562525832}
   - component: {fileID: 2845181655562525846}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16457,7 +16590,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -16611,7 +16744,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -16637,7 +16770,7 @@ GameObject:
   - component: {fileID: 2845181655568366487}
   - component: {fileID: 2845181655568366472}
   - component: {fileID: 2845181655568366486}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16723,7 +16856,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -16770,7 +16903,7 @@ GameObject:
   - component: {fileID: 2845181655571478819}
   - component: {fileID: 2845181655571478820}
   - component: {fileID: 2845181655571478818}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16856,7 +16989,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -16903,7 +17036,7 @@ GameObject:
   - component: {fileID: 2845181655573061510}
   - component: {fileID: 2845181655573061511}
   - component: {fileID: 2845181655573061509}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16989,7 +17122,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -17036,7 +17169,7 @@ GameObject:
   - component: {fileID: 2845181655576971536}
   - component: {fileID: 2845181655576971537}
   - component: {fileID: 2845181655576971551}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17122,7 +17255,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -17169,7 +17302,7 @@ GameObject:
   - component: {fileID: 2845181655585735047}
   - component: {fileID: 2845181655585735160}
   - component: {fileID: 2845181655585735046}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17255,7 +17388,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -17302,7 +17435,7 @@ GameObject:
   - component: {fileID: 2845181655588182058}
   - component: {fileID: 2845181655588182059}
   - component: {fileID: 2845181655588182057}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17388,7 +17521,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -17542,7 +17675,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -17568,7 +17701,7 @@ GameObject:
   - component: {fileID: 2845181655591985543}
   - component: {fileID: 2845181655591985656}
   - component: {fileID: 2845181655591985542}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17654,7 +17787,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -17701,7 +17834,7 @@ GameObject:
   - component: {fileID: 2845181655602829533}
   - component: {fileID: 2845181655602829534}
   - component: {fileID: 2845181655602829532}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17787,7 +17920,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -17834,7 +17967,7 @@ GameObject:
   - component: {fileID: 2845181655603011680}
   - component: {fileID: 2845181655603011681}
   - component: {fileID: 2845181655603011695}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17920,7 +18053,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -17967,7 +18100,7 @@ GameObject:
   - component: {fileID: 2845181655608467467}
   - component: {fileID: 2845181655608467468}
   - component: {fileID: 2845181655608467466}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18053,7 +18186,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -18100,7 +18233,7 @@ GameObject:
   - component: {fileID: 2845181655612992506}
   - component: {fileID: 2845181655612992507}
   - component: {fileID: 2845181655612992505}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18186,7 +18319,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -18233,7 +18366,7 @@ GameObject:
   - component: {fileID: 2845181655614045034}
   - component: {fileID: 2845181655614045035}
   - component: {fileID: 2845181655614045033}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18319,7 +18452,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -18366,7 +18499,7 @@ GameObject:
   - component: {fileID: 2845181655614841199}
   - component: {fileID: 2845181655614841184}
   - component: {fileID: 2845181655614841198}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18452,7 +18585,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -18499,7 +18632,7 @@ GameObject:
   - component: {fileID: 2845181655634159117}
   - component: {fileID: 2845181655634159118}
   - component: {fileID: 2845181655634159116}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18585,7 +18718,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -18632,7 +18765,7 @@ GameObject:
   - component: {fileID: 2845181655634563784}
   - component: {fileID: 2845181655634563785}
   - component: {fileID: 2845181655634563799}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18718,7 +18851,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -18872,7 +19005,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -19005,7 +19138,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -19031,7 +19164,7 @@ GameObject:
   - component: {fileID: 2845181655660871656}
   - component: {fileID: 2845181655660871657}
   - component: {fileID: 2845181655660871671}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19117,7 +19250,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -19164,7 +19297,7 @@ GameObject:
   - component: {fileID: 2845181655673496314}
   - component: {fileID: 2845181655673496315}
   - component: {fileID: 2845181655673496313}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19250,7 +19383,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -19281,7 +19414,7 @@ MonoBehaviour:
   upTile: {fileID: 0}
   downTile: {fileID: 0}
   leftTile: {fileID: 2845181656088328127}
-  rightTile: {fileID: 0}
+  rightTile: {fileID: 2624675754250110721}
   attachedTile: {fileID: 0}
   owningGrid: {fileID: 2845181656936423683}
   numTilesToSpawn: 1
@@ -19297,7 +19430,7 @@ GameObject:
   - component: {fileID: 2845181655687912231}
   - component: {fileID: 2845181655687912216}
   - component: {fileID: 2845181655687912230}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19383,7 +19516,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -19430,7 +19563,7 @@ GameObject:
   - component: {fileID: 2845181655687999284}
   - component: {fileID: 2845181655687999285}
   - component: {fileID: 2845181655687999283}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19516,7 +19649,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -19563,7 +19696,7 @@ GameObject:
   - component: {fileID: 2845181655690060611}
   - component: {fileID: 2845181655690060612}
   - component: {fileID: 2845181655690060610}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19649,7 +19782,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -19696,7 +19829,7 @@ GameObject:
   - component: {fileID: 2845181655692049273}
   - component: {fileID: 2845181655692049274}
   - component: {fileID: 2845181655692049272}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19782,7 +19915,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -19829,7 +19962,7 @@ GameObject:
   - component: {fileID: 2845181655695605120}
   - component: {fileID: 2845181655695605121}
   - component: {fileID: 2845181655695605135}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19915,7 +20048,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -19962,7 +20095,7 @@ GameObject:
   - component: {fileID: 2845181655699021612}
   - component: {fileID: 2845181655699021613}
   - component: {fileID: 2845181655699021611}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20048,7 +20181,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -20095,7 +20228,7 @@ GameObject:
   - component: {fileID: 2845181655703380729}
   - component: {fileID: 2845181655703380730}
   - component: {fileID: 2845181655703380728}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20181,7 +20314,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -20228,7 +20361,7 @@ GameObject:
   - component: {fileID: 2845181655720786562}
   - component: {fileID: 2845181655720786563}
   - component: {fileID: 2845181655720786561}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20314,7 +20447,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -20361,7 +20494,7 @@ GameObject:
   - component: {fileID: 2845181655724447548}
   - component: {fileID: 2845181655724447549}
   - component: {fileID: 2845181655724447547}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20447,7 +20580,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -20494,7 +20627,7 @@ GameObject:
   - component: {fileID: 2845181655729026601}
   - component: {fileID: 2845181655729026602}
   - component: {fileID: 2845181655729026600}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20580,7 +20713,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -20627,7 +20760,7 @@ GameObject:
   - component: {fileID: 2845181655737608773}
   - component: {fileID: 2845181655737608774}
   - component: {fileID: 2845181655737608772}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20713,7 +20846,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -20760,7 +20893,7 @@ GameObject:
   - component: {fileID: 2845181655754623601}
   - component: {fileID: 2845181655754623602}
   - component: {fileID: 2845181655754623600}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20846,7 +20979,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -20893,7 +21026,7 @@ GameObject:
   - component: {fileID: 2845181655756054910}
   - component: {fileID: 2845181655756054911}
   - component: {fileID: 2845181655756054909}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20979,7 +21112,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -21026,7 +21159,7 @@ GameObject:
   - component: {fileID: 2845181655762105213}
   - component: {fileID: 2845181655762105214}
   - component: {fileID: 2845181655762105212}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21112,7 +21245,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -21159,7 +21292,7 @@ GameObject:
   - component: {fileID: 2845181655775596916}
   - component: {fileID: 2845181655775596917}
   - component: {fileID: 2845181655775596915}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21245,7 +21378,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -21292,7 +21425,7 @@ GameObject:
   - component: {fileID: 2845181655791129902}
   - component: {fileID: 2845181655791129903}
   - component: {fileID: 2845181655791129901}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21378,7 +21511,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -21425,7 +21558,7 @@ GameObject:
   - component: {fileID: 2845181655793840153}
   - component: {fileID: 2845181655793840154}
   - component: {fileID: 2845181655793840152}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21511,7 +21644,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -21558,7 +21691,7 @@ GameObject:
   - component: {fileID: 2845181655810942152}
   - component: {fileID: 2845181655810942153}
   - component: {fileID: 2845181655810942167}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21644,7 +21777,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -21691,7 +21824,7 @@ GameObject:
   - component: {fileID: 2845181655818295945}
   - component: {fileID: 2845181655818295946}
   - component: {fileID: 2845181655818295944}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21777,7 +21910,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -21824,7 +21957,7 @@ GameObject:
   - component: {fileID: 2845181655818991000}
   - component: {fileID: 2845181655818991001}
   - component: {fileID: 2845181655818991015}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21910,7 +22043,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -21957,7 +22090,7 @@ GameObject:
   - component: {fileID: 2845181655819524938}
   - component: {fileID: 2845181655819524939}
   - component: {fileID: 2845181655819524937}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22043,7 +22176,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -22090,7 +22223,7 @@ GameObject:
   - component: {fileID: 2845181655820211838}
   - component: {fileID: 2845181655820211839}
   - component: {fileID: 2845181655820211837}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22176,7 +22309,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -22330,7 +22463,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -22356,7 +22489,7 @@ GameObject:
   - component: {fileID: 2845181655830756892}
   - component: {fileID: 2845181655830756893}
   - component: {fileID: 2845181655830756891}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22442,7 +22575,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -22489,7 +22622,7 @@ GameObject:
   - component: {fileID: 2845181655831534683}
   - component: {fileID: 2845181655831534684}
   - component: {fileID: 2845181655831534682}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22575,7 +22708,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -22622,7 +22755,7 @@ GameObject:
   - component: {fileID: 2845181655831622385}
   - component: {fileID: 2845181655831622386}
   - component: {fileID: 2845181655831622384}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22708,7 +22841,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -22862,7 +22995,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -22888,7 +23021,7 @@ GameObject:
   - component: {fileID: 2845181655843715774}
   - component: {fileID: 2845181655843715775}
   - component: {fileID: 2845181655843715773}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22974,7 +23107,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -23021,7 +23154,7 @@ GameObject:
   - component: {fileID: 2845181655848053515}
   - component: {fileID: 2845181655848053516}
   - component: {fileID: 2845181655848053514}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23107,7 +23240,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -23154,7 +23287,7 @@ GameObject:
   - component: {fileID: 2845181655852397799}
   - component: {fileID: 2845181655852397784}
   - component: {fileID: 2845181655852397798}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23240,7 +23373,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -23287,7 +23420,7 @@ GameObject:
   - component: {fileID: 2845181655852653744}
   - component: {fileID: 2845181655852653745}
   - component: {fileID: 2845181655852653759}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23373,7 +23506,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -23527,7 +23660,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -23553,7 +23686,7 @@ GameObject:
   - component: {fileID: 2845181655883775900}
   - component: {fileID: 2845181655883775901}
   - component: {fileID: 2845181655883775899}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23639,7 +23772,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -23686,7 +23819,7 @@ GameObject:
   - component: {fileID: 2845181655886544786}
   - component: {fileID: 2845181655886544787}
   - component: {fileID: 2845181655886544785}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23772,7 +23905,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -23819,7 +23952,7 @@ GameObject:
   - component: {fileID: 2845181655887004936}
   - component: {fileID: 2845181655887004937}
   - component: {fileID: 2845181655887004951}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23905,7 +24038,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -23952,7 +24085,7 @@ GameObject:
   - component: {fileID: 2845181655888853263}
   - component: {fileID: 2845181655888853248}
   - component: {fileID: 2845181655888853262}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24038,7 +24171,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -24085,7 +24218,7 @@ GameObject:
   - component: {fileID: 2845181655910837424}
   - component: {fileID: 2845181655910837425}
   - component: {fileID: 2845181655910837439}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24171,7 +24304,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -24218,7 +24351,7 @@ GameObject:
   - component: {fileID: 2845181655913005180}
   - component: {fileID: 2845181655913005181}
   - component: {fileID: 2845181655913005179}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24304,7 +24437,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -24351,7 +24484,7 @@ GameObject:
   - component: {fileID: 2845181655916862708}
   - component: {fileID: 2845181655916862709}
   - component: {fileID: 2845181655916862707}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24437,7 +24570,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -24591,7 +24724,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -24617,7 +24750,7 @@ GameObject:
   - component: {fileID: 2845181655927715463}
   - component: {fileID: 2845181655927715576}
   - component: {fileID: 2845181655927715462}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24703,7 +24836,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -24750,7 +24883,7 @@ GameObject:
   - component: {fileID: 2845181655928964963}
   - component: {fileID: 2845181655928964964}
   - component: {fileID: 2845181655928964962}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24836,7 +24969,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -24883,7 +25016,7 @@ GameObject:
   - component: {fileID: 2845181655930299300}
   - component: {fileID: 2845181655930299301}
   - component: {fileID: 2845181655930299299}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24969,7 +25102,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -25016,7 +25149,7 @@ GameObject:
   - component: {fileID: 2845181655945345180}
   - component: {fileID: 2845181655945345181}
   - component: {fileID: 2845181655945345179}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25102,7 +25235,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -25149,7 +25282,7 @@ GameObject:
   - component: {fileID: 2845181655950483353}
   - component: {fileID: 2845181655950483354}
   - component: {fileID: 2845181655950483352}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25235,7 +25368,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -25389,7 +25522,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -25415,7 +25548,7 @@ GameObject:
   - component: {fileID: 2845181655957281843}
   - component: {fileID: 2845181655957281844}
   - component: {fileID: 2845181655957281842}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25501,7 +25634,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -25548,7 +25681,7 @@ GameObject:
   - component: {fileID: 2845181655963899451}
   - component: {fileID: 2845181655963899452}
   - component: {fileID: 2845181655963899450}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25634,7 +25767,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -25788,7 +25921,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -25814,7 +25947,7 @@ GameObject:
   - component: {fileID: 2845181655974104410}
   - component: {fileID: 2845181655974104411}
   - component: {fileID: 2845181655974104409}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25900,7 +26033,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -25947,7 +26080,7 @@ GameObject:
   - component: {fileID: 2845181656004519574}
   - component: {fileID: 2845181656004519575}
   - component: {fileID: 2845181656004519573}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26033,7 +26166,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -26080,7 +26213,7 @@ GameObject:
   - component: {fileID: 2845181656009258737}
   - component: {fileID: 2845181656009258738}
   - component: {fileID: 2845181656009258736}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26166,7 +26299,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -26213,7 +26346,7 @@ GameObject:
   - component: {fileID: 2845181656011045135}
   - component: {fileID: 2845181656011045120}
   - component: {fileID: 2845181656011045134}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26299,7 +26432,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -26453,7 +26586,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -26479,7 +26612,7 @@ GameObject:
   - component: {fileID: 2845181656037390957}
   - component: {fileID: 2845181656037390958}
   - component: {fileID: 2845181656037390956}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26565,7 +26698,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -26612,7 +26745,7 @@ GameObject:
   - component: {fileID: 2845181656039397776}
   - component: {fileID: 2845181656039397777}
   - component: {fileID: 2845181656039397791}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26698,7 +26831,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -26745,7 +26878,7 @@ GameObject:
   - component: {fileID: 2845181656048781850}
   - component: {fileID: 2845181656048781851}
   - component: {fileID: 2845181656048781849}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26831,7 +26964,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -26878,7 +27011,7 @@ GameObject:
   - component: {fileID: 2845181656052393416}
   - component: {fileID: 2845181656052393417}
   - component: {fileID: 2845181656052393431}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26964,7 +27097,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -27011,7 +27144,7 @@ GameObject:
   - component: {fileID: 2845181656054205696}
   - component: {fileID: 2845181656054205697}
   - component: {fileID: 2845181656054205711}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27097,7 +27230,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -27144,7 +27277,7 @@ GameObject:
   - component: {fileID: 2845181656072370596}
   - component: {fileID: 2845181656072370597}
   - component: {fileID: 2845181656072370595}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27230,7 +27363,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -27277,7 +27410,7 @@ GameObject:
   - component: {fileID: 2845181656076372136}
   - component: {fileID: 2845181656076372137}
   - component: {fileID: 2845181656076372151}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27363,7 +27496,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -27410,7 +27543,7 @@ GameObject:
   - component: {fileID: 2845181656086069157}
   - component: {fileID: 2845181656086069158}
   - component: {fileID: 2845181656086069156}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27496,7 +27629,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -27543,7 +27676,7 @@ GameObject:
   - component: {fileID: 2845181656087126765}
   - component: {fileID: 2845181656087126766}
   - component: {fileID: 2845181656087126764}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27629,7 +27762,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -27676,7 +27809,7 @@ GameObject:
   - component: {fileID: 2845181656088328112}
   - component: {fileID: 2845181656088328113}
   - component: {fileID: 2845181656088328127}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27762,7 +27895,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -27916,7 +28049,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -27942,7 +28075,7 @@ GameObject:
   - component: {fileID: 2845181656109709541}
   - component: {fileID: 2845181656109709542}
   - component: {fileID: 2845181656109709540}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28028,7 +28161,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -28075,7 +28208,7 @@ GameObject:
   - component: {fileID: 2845181656117803690}
   - component: {fileID: 2845181656117803691}
   - component: {fileID: 2845181656117803689}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28161,7 +28294,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -28208,7 +28341,7 @@ GameObject:
   - component: {fileID: 2845181656131387234}
   - component: {fileID: 2845181656131387235}
   - component: {fileID: 2845181656131387233}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28294,7 +28427,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -28341,7 +28474,7 @@ GameObject:
   - component: {fileID: 2845181656137208434}
   - component: {fileID: 2845181656137208435}
   - component: {fileID: 2845181656137208433}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28427,7 +28560,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -28581,7 +28714,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -28607,7 +28740,7 @@ GameObject:
   - component: {fileID: 2845181656162631499}
   - component: {fileID: 2845181656162631500}
   - component: {fileID: 2845181656162631498}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28693,7 +28826,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -28723,7 +28856,7 @@ MonoBehaviour:
   rendererComponent: {fileID: 2845181656162631499}
   upTile: {fileID: 0}
   downTile: {fileID: 0}
-  leftTile: {fileID: 0}
+  leftTile: {fileID: 8310173775447629647}
   rightTile: {fileID: 2845181656109709540}
   attachedTile: {fileID: 0}
   owningGrid: {fileID: 2845181656936423683}
@@ -28740,7 +28873,7 @@ GameObject:
   - component: {fileID: 2845181656164785376}
   - component: {fileID: 2845181656164785377}
   - component: {fileID: 2845181656164785391}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28826,7 +28959,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -28873,7 +29006,7 @@ GameObject:
   - component: {fileID: 2845181656165515371}
   - component: {fileID: 2845181656165515372}
   - component: {fileID: 2845181656165515370}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28959,7 +29092,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -29006,7 +29139,7 @@ GameObject:
   - component: {fileID: 2845181656171112107}
   - component: {fileID: 2845181656171112108}
   - component: {fileID: 2845181656171112106}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29092,7 +29225,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -29139,7 +29272,7 @@ GameObject:
   - component: {fileID: 2845181656174651652}
   - component: {fileID: 2845181656174651653}
   - component: {fileID: 2845181656174651651}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29225,7 +29358,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -29379,7 +29512,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -29405,7 +29538,7 @@ GameObject:
   - component: {fileID: 2845181656180516277}
   - component: {fileID: 2845181656180516278}
   - component: {fileID: 2845181656180516276}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29491,7 +29624,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -29538,7 +29671,7 @@ GameObject:
   - component: {fileID: 2845181656182293690}
   - component: {fileID: 2845181656182293691}
   - component: {fileID: 2845181656182293689}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29624,7 +29757,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -29671,7 +29804,7 @@ GameObject:
   - component: {fileID: 2845181656185758676}
   - component: {fileID: 2845181656185758677}
   - component: {fileID: 2845181656185758675}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29757,7 +29890,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -29804,7 +29937,7 @@ GameObject:
   - component: {fileID: 2845181656191506042}
   - component: {fileID: 2845181656191506043}
   - component: {fileID: 2845181656191506041}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29890,7 +30023,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -29937,7 +30070,7 @@ GameObject:
   - component: {fileID: 2845181656195011291}
   - component: {fileID: 2845181656195011292}
   - component: {fileID: 2845181656195011290}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30023,7 +30156,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -30070,7 +30203,7 @@ GameObject:
   - component: {fileID: 2845181656199221278}
   - component: {fileID: 2845181656199221279}
   - component: {fileID: 2845181656199221277}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30156,7 +30289,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -30203,7 +30336,7 @@ GameObject:
   - component: {fileID: 2845181656207666603}
   - component: {fileID: 2845181656207666604}
   - component: {fileID: 2845181656207666602}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30289,7 +30422,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -30336,7 +30469,7 @@ GameObject:
   - component: {fileID: 2845181656210166406}
   - component: {fileID: 2845181656210166407}
   - component: {fileID: 2845181656210166405}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30422,7 +30555,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -30469,7 +30602,7 @@ GameObject:
   - component: {fileID: 2845181656224396007}
   - component: {fileID: 2845181656224395992}
   - component: {fileID: 2845181656224396006}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30555,7 +30688,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -30602,7 +30735,7 @@ GameObject:
   - component: {fileID: 2845181656233138741}
   - component: {fileID: 2845181656233138742}
   - component: {fileID: 2845181656233138740}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30688,7 +30821,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -30735,7 +30868,7 @@ GameObject:
   - component: {fileID: 2845181656234235355}
   - component: {fileID: 2845181656234235356}
   - component: {fileID: 2845181656234235354}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30821,7 +30954,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -30975,7 +31108,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -31001,7 +31134,7 @@ GameObject:
   - component: {fileID: 2845181656242601291}
   - component: {fileID: 2845181656242601292}
   - component: {fileID: 2845181656242601290}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31087,7 +31220,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -31134,7 +31267,7 @@ GameObject:
   - component: {fileID: 2845181656249549867}
   - component: {fileID: 2845181656249549868}
   - component: {fileID: 2845181656249549866}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31220,7 +31353,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -31374,7 +31507,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -31400,7 +31533,7 @@ GameObject:
   - component: {fileID: 2845181656265552136}
   - component: {fileID: 2845181656265552137}
   - component: {fileID: 2845181656265552151}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31486,7 +31619,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -31533,7 +31666,7 @@ GameObject:
   - component: {fileID: 2845181656266585098}
   - component: {fileID: 2845181656266585099}
   - component: {fileID: 2845181656266585097}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31619,7 +31752,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -31773,7 +31906,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -31799,7 +31932,7 @@ GameObject:
   - component: {fileID: 2845181656307059500}
   - component: {fileID: 2845181656307059501}
   - component: {fileID: 2845181656307059499}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31885,7 +32018,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -31932,7 +32065,7 @@ GameObject:
   - component: {fileID: 2845181656314218573}
   - component: {fileID: 2845181656314218574}
   - component: {fileID: 2845181656314218572}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32018,7 +32151,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -32065,7 +32198,7 @@ GameObject:
   - component: {fileID: 2845181656330474150}
   - component: {fileID: 2845181656330474151}
   - component: {fileID: 2845181656330474149}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32151,7 +32284,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -32198,7 +32331,7 @@ GameObject:
   - component: {fileID: 2845181656334547091}
   - component: {fileID: 2845181656334547092}
   - component: {fileID: 2845181656334547090}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32284,7 +32417,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -32331,7 +32464,7 @@ GameObject:
   - component: {fileID: 2845181656335040054}
   - component: {fileID: 2845181656335040055}
   - component: {fileID: 2845181656335040053}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32417,7 +32550,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -32571,7 +32704,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -32597,7 +32730,7 @@ GameObject:
   - component: {fileID: 2845181656344146277}
   - component: {fileID: 2845181656344146278}
   - component: {fileID: 2845181656344146276}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32683,7 +32816,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -32730,7 +32863,7 @@ GameObject:
   - component: {fileID: 2845181656345967213}
   - component: {fileID: 2845181656345967214}
   - component: {fileID: 2845181656345967212}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32816,7 +32949,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -32863,7 +32996,7 @@ GameObject:
   - component: {fileID: 2845181656347799659}
   - component: {fileID: 2845181656347799660}
   - component: {fileID: 2845181656347799658}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32949,7 +33082,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -33103,7 +33236,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -33129,7 +33262,7 @@ GameObject:
   - component: {fileID: 2845181656356882544}
   - component: {fileID: 2845181656356882545}
   - component: {fileID: 2845181656356882559}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33215,7 +33348,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -33369,7 +33502,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -33395,7 +33528,7 @@ GameObject:
   - component: {fileID: 2845181656377054565}
   - component: {fileID: 2845181656377054566}
   - component: {fileID: 2845181656377054564}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33481,7 +33614,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -33528,7 +33661,7 @@ GameObject:
   - component: {fileID: 2845181656377436875}
   - component: {fileID: 2845181656377436876}
   - component: {fileID: 2845181656377436874}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33614,7 +33747,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -33661,7 +33794,7 @@ GameObject:
   - component: {fileID: 2845181656377859728}
   - component: {fileID: 2845181656377859729}
   - component: {fileID: 2845181656377859743}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33747,7 +33880,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -33794,7 +33927,7 @@ GameObject:
   - component: {fileID: 2845181656379927131}
   - component: {fileID: 2845181656379927132}
   - component: {fileID: 2845181656379927130}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33880,7 +34013,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -33927,7 +34060,7 @@ GameObject:
   - component: {fileID: 2845181656381950490}
   - component: {fileID: 2845181656381950491}
   - component: {fileID: 2845181656381950489}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34013,7 +34146,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -34060,7 +34193,7 @@ GameObject:
   - component: {fileID: 2845181656393848953}
   - component: {fileID: 2845181656393848954}
   - component: {fileID: 2845181656393848952}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34146,7 +34279,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -34193,7 +34326,7 @@ GameObject:
   - component: {fileID: 2845181656398329386}
   - component: {fileID: 2845181656398329387}
   - component: {fileID: 2845181656398329385}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34279,7 +34412,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -34326,7 +34459,7 @@ GameObject:
   - component: {fileID: 2845181656410858797}
   - component: {fileID: 2845181656410858798}
   - component: {fileID: 2845181656410858796}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34412,7 +34545,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -34459,7 +34592,7 @@ GameObject:
   - component: {fileID: 2845181656421743325}
   - component: {fileID: 2845181656421743326}
   - component: {fileID: 2845181656421743324}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34545,7 +34678,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -34592,7 +34725,7 @@ GameObject:
   - component: {fileID: 2845181656422997477}
   - component: {fileID: 2845181656422997478}
   - component: {fileID: 2845181656422997476}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34678,7 +34811,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -34725,7 +34858,7 @@ GameObject:
   - component: {fileID: 2845181656430595986}
   - component: {fileID: 2845181656430595987}
   - component: {fileID: 2845181656430595985}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34811,7 +34944,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -34858,7 +34991,7 @@ GameObject:
   - component: {fileID: 2845181656435436108}
   - component: {fileID: 2845181656435436109}
   - component: {fileID: 2845181656435436107}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34944,7 +35077,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -35098,7 +35231,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -35124,7 +35257,7 @@ GameObject:
   - component: {fileID: 2845181656447310197}
   - component: {fileID: 2845181656447310198}
   - component: {fileID: 2845181656447310196}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35210,7 +35343,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -35257,7 +35390,7 @@ GameObject:
   - component: {fileID: 2845181656452554616}
   - component: {fileID: 2845181656452554617}
   - component: {fileID: 2845181656452554503}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35343,7 +35476,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -35497,7 +35630,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -35523,7 +35656,7 @@ GameObject:
   - component: {fileID: 2845181656455673531}
   - component: {fileID: 2845181656455673532}
   - component: {fileID: 2845181656455673530}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35609,7 +35742,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -35656,7 +35789,7 @@ GameObject:
   - component: {fileID: 2845181656460941001}
   - component: {fileID: 2845181656460941002}
   - component: {fileID: 2845181656460941000}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35742,7 +35875,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -35896,7 +36029,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -35922,7 +36055,7 @@ GameObject:
   - component: {fileID: 2845181656473250653}
   - component: {fileID: 2845181656473250652}
   - component: {fileID: 2845181656473250651}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36008,7 +36141,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -36055,7 +36188,7 @@ GameObject:
   - component: {fileID: 2845181656474703867}
   - component: {fileID: 2845181656474703868}
   - component: {fileID: 2845181656474703866}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36141,7 +36274,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -36188,7 +36321,7 @@ GameObject:
   - component: {fileID: 2845181656488135936}
   - component: {fileID: 2845181656488135937}
   - component: {fileID: 2845181656488135951}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36274,7 +36407,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -36321,7 +36454,7 @@ GameObject:
   - component: {fileID: 2845181656490564867}
   - component: {fileID: 2845181656490564868}
   - component: {fileID: 2845181656490564866}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36407,7 +36540,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -36454,7 +36587,7 @@ GameObject:
   - component: {fileID: 2845181656499153157}
   - component: {fileID: 2845181656499153158}
   - component: {fileID: 2845181656499153156}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36540,7 +36673,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -36587,7 +36720,7 @@ GameObject:
   - component: {fileID: 2845181656499871587}
   - component: {fileID: 2845181656499871588}
   - component: {fileID: 2845181656499871586}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36673,7 +36806,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -36720,7 +36853,7 @@ GameObject:
   - component: {fileID: 2845181656502340474}
   - component: {fileID: 2845181656502340475}
   - component: {fileID: 2845181656502340473}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36806,7 +36939,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -36853,7 +36986,7 @@ GameObject:
   - component: {fileID: 2845181656503176276}
   - component: {fileID: 2845181656503176277}
   - component: {fileID: 2845181656503176275}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36939,7 +37072,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -36986,7 +37119,7 @@ GameObject:
   - component: {fileID: 2845181656508542186}
   - component: {fileID: 2845181656508542187}
   - component: {fileID: 2845181656508542185}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37072,7 +37205,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -37119,7 +37252,7 @@ GameObject:
   - component: {fileID: 2845181656514781991}
   - component: {fileID: 2845181656514781976}
   - component: {fileID: 2845181656514781990}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37205,7 +37338,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -37252,7 +37385,7 @@ GameObject:
   - component: {fileID: 2845181656520604602}
   - component: {fileID: 2845181656520604603}
   - component: {fileID: 2845181656520604601}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37338,7 +37471,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -37492,7 +37625,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -37518,7 +37651,7 @@ GameObject:
   - component: {fileID: 2845181656522925827}
   - component: {fileID: 2845181656522925828}
   - component: {fileID: 2845181656522925826}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37604,7 +37737,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -37651,7 +37784,7 @@ GameObject:
   - component: {fileID: 2845181656531366625}
   - component: {fileID: 2845181656531366626}
   - component: {fileID: 2845181656531366624}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37737,7 +37870,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -37784,7 +37917,7 @@ GameObject:
   - component: {fileID: 2845181656539609294}
   - component: {fileID: 2845181656539609295}
   - component: {fileID: 2845181656539609293}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37870,7 +38003,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -37917,7 +38050,7 @@ GameObject:
   - component: {fileID: 2845181656541016992}
   - component: {fileID: 2845181656541016993}
   - component: {fileID: 2845181656541017007}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38003,7 +38136,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -38050,7 +38183,7 @@ GameObject:
   - component: {fileID: 2845181656543463184}
   - component: {fileID: 2845181656543463185}
   - component: {fileID: 2845181656543463199}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38136,7 +38269,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -38183,7 +38316,7 @@ GameObject:
   - component: {fileID: 2845181656549653723}
   - component: {fileID: 2845181656549653724}
   - component: {fileID: 2845181656549653722}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38269,7 +38402,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -38316,7 +38449,7 @@ GameObject:
   - component: {fileID: 2845181656550757523}
   - component: {fileID: 2845181656550757524}
   - component: {fileID: 2845181656550757522}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38402,7 +38535,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -38449,7 +38582,7 @@ GameObject:
   - component: {fileID: 2845181656551839576}
   - component: {fileID: 2845181656551839577}
   - component: {fileID: 2845181656551839591}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38535,7 +38668,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -38582,7 +38715,7 @@ GameObject:
   - component: {fileID: 2845181656553471363}
   - component: {fileID: 2845181656553471364}
   - component: {fileID: 2845181656553471362}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38668,7 +38801,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -38715,7 +38848,7 @@ GameObject:
   - component: {fileID: 2845181656554465167}
   - component: {fileID: 2845181656554465152}
   - component: {fileID: 2845181656554465166}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38801,7 +38934,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -38848,7 +38981,7 @@ GameObject:
   - component: {fileID: 2845181656557133147}
   - component: {fileID: 2845181656557133148}
   - component: {fileID: 2845181656557133146}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38934,7 +39067,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -38981,7 +39114,7 @@ GameObject:
   - component: {fileID: 2845181656560661124}
   - component: {fileID: 2845181656560661125}
   - component: {fileID: 2845181656560661123}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39067,7 +39200,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -39114,7 +39247,7 @@ GameObject:
   - component: {fileID: 2845181656563020219}
   - component: {fileID: 2845181656563020220}
   - component: {fileID: 2845181656563020218}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39200,7 +39333,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -39354,7 +39487,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -39487,7 +39620,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -39513,7 +39646,7 @@ GameObject:
   - component: {fileID: 2845181656586218122}
   - component: {fileID: 2845181656586218123}
   - component: {fileID: 2845181656586218121}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39599,7 +39732,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -39646,7 +39779,7 @@ GameObject:
   - component: {fileID: 2845181656587794186}
   - component: {fileID: 2845181656587794187}
   - component: {fileID: 2845181656587794185}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39732,7 +39865,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -39779,7 +39912,7 @@ GameObject:
   - component: {fileID: 2845181656588252595}
   - component: {fileID: 2845181656588252596}
   - component: {fileID: 2845181656588252594}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39865,7 +39998,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -39912,7 +40045,7 @@ GameObject:
   - component: {fileID: 2845181656589253480}
   - component: {fileID: 2845181656589253481}
   - component: {fileID: 2845181656589253495}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39998,7 +40131,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -40045,7 +40178,7 @@ GameObject:
   - component: {fileID: 2845181656591147899}
   - component: {fileID: 2845181656591147900}
   - component: {fileID: 2845181656591147898}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40131,7 +40264,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -40178,7 +40311,7 @@ GameObject:
   - component: {fileID: 2845181656592665648}
   - component: {fileID: 2845181656592665649}
   - component: {fileID: 2845181656592665663}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40264,7 +40397,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -40311,7 +40444,7 @@ GameObject:
   - component: {fileID: 2845181656597436239}
   - component: {fileID: 2845181656597436224}
   - component: {fileID: 2845181656597436238}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40397,7 +40530,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -40551,7 +40684,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -40577,7 +40710,7 @@ GameObject:
   - component: {fileID: 2845181656627927252}
   - component: {fileID: 2845181656627927253}
   - component: {fileID: 2845181656627927251}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40663,7 +40796,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -40710,7 +40843,7 @@ GameObject:
   - component: {fileID: 2845181656630035136}
   - component: {fileID: 2845181656630035137}
   - component: {fileID: 2845181656630035151}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40796,7 +40929,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -40843,7 +40976,7 @@ GameObject:
   - component: {fileID: 2845181656634037688}
   - component: {fileID: 2845181656634037319}
   - component: {fileID: 2845181656634037318}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40929,7 +41062,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -40976,7 +41109,7 @@ GameObject:
   - component: {fileID: 2845181656656873742}
   - component: {fileID: 2845181656656873743}
   - component: {fileID: 2845181656656873741}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41062,7 +41195,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -41109,7 +41242,7 @@ GameObject:
   - component: {fileID: 2845181656658282835}
   - component: {fileID: 2845181656658282836}
   - component: {fileID: 2845181656658282834}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41195,7 +41328,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -41242,7 +41375,7 @@ GameObject:
   - component: {fileID: 2845181656659743276}
   - component: {fileID: 2845181656659743277}
   - component: {fileID: 2845181656659743275}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41328,7 +41461,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -41482,7 +41615,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -41615,7 +41748,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -41641,7 +41774,7 @@ GameObject:
   - component: {fileID: 2845181656683773387}
   - component: {fileID: 2845181656683773388}
   - component: {fileID: 2845181656683773386}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41727,7 +41860,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -41774,7 +41907,7 @@ GameObject:
   - component: {fileID: 2845181656691417959}
   - component: {fileID: 2845181656691417944}
   - component: {fileID: 2845181656691417958}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41860,7 +41993,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -41907,7 +42040,7 @@ GameObject:
   - component: {fileID: 2845181656704157629}
   - component: {fileID: 2845181656704157630}
   - component: {fileID: 2845181656704157628}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41993,7 +42126,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -42040,7 +42173,7 @@ GameObject:
   - component: {fileID: 2845181656709332561}
   - component: {fileID: 2845181656709332560}
   - component: {fileID: 2845181656709332575}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42126,7 +42259,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -42173,7 +42306,7 @@ GameObject:
   - component: {fileID: 2845181656724186257}
   - component: {fileID: 2845181656724186258}
   - component: {fileID: 2845181656724186256}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42259,7 +42392,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -42306,7 +42439,7 @@ GameObject:
   - component: {fileID: 2845181656728432621}
   - component: {fileID: 2845181656728432622}
   - component: {fileID: 2845181656728432620}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42392,7 +42525,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -42546,7 +42679,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -42572,7 +42705,7 @@ GameObject:
   - component: {fileID: 2845181656751012360}
   - component: {fileID: 2845181656751012361}
   - component: {fileID: 2845181656751012375}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42658,7 +42791,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -42705,7 +42838,7 @@ GameObject:
   - component: {fileID: 2845181656755670343}
   - component: {fileID: 2845181656755679928}
   - component: {fileID: 2845181656755670342}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42791,7 +42924,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -42838,7 +42971,7 @@ GameObject:
   - component: {fileID: 2845181656760631865}
   - component: {fileID: 2845181656760631866}
   - component: {fileID: 2845181656760631864}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42924,7 +43057,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -42971,7 +43104,7 @@ GameObject:
   - component: {fileID: 2845181656770289595}
   - component: {fileID: 2845181656770289596}
   - component: {fileID: 2845181656770289594}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43057,7 +43190,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -43104,7 +43237,7 @@ GameObject:
   - component: {fileID: 2845181656771825737}
   - component: {fileID: 2845181656771825738}
   - component: {fileID: 2845181656771825736}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43190,7 +43323,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -43237,7 +43370,7 @@ GameObject:
   - component: {fileID: 2845181656778531216}
   - component: {fileID: 2845181656778531217}
   - component: {fileID: 2845181656778531231}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43323,7 +43456,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -43477,7 +43610,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -43503,7 +43636,7 @@ GameObject:
   - component: {fileID: 2845181656798811859}
   - component: {fileID: 2845181656798811860}
   - component: {fileID: 2845181656798811858}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43589,7 +43722,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -43636,7 +43769,7 @@ GameObject:
   - component: {fileID: 2845181656799686322}
   - component: {fileID: 2845181656799686323}
   - component: {fileID: 2845181656799686321}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43722,7 +43855,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -43769,7 +43902,7 @@ GameObject:
   - component: {fileID: 2845181656805259228}
   - component: {fileID: 2845181656805259229}
   - component: {fileID: 2845181656805259227}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43855,7 +43988,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -43902,7 +44035,7 @@ GameObject:
   - component: {fileID: 2845181656807657525}
   - component: {fileID: 2845181656807657526}
   - component: {fileID: 2845181656807657524}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43988,7 +44121,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -44142,7 +44275,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -44168,7 +44301,7 @@ GameObject:
   - component: {fileID: 2845181656830916619}
   - component: {fileID: 2845181656830916620}
   - component: {fileID: 2845181656830916618}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44254,7 +44387,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -44301,7 +44434,7 @@ GameObject:
   - component: {fileID: 2845181656842024569}
   - component: {fileID: 2845181656842024570}
   - component: {fileID: 2845181656842024568}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44387,7 +44520,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -44434,7 +44567,7 @@ GameObject:
   - component: {fileID: 2845181656843458893}
   - component: {fileID: 2845181656843458894}
   - component: {fileID: 2845181656843458892}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44520,7 +44653,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -44567,7 +44700,7 @@ GameObject:
   - component: {fileID: 2845181656852818506}
   - component: {fileID: 2845181656852818507}
   - component: {fileID: 2845181656852818505}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44653,7 +44786,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -44700,7 +44833,7 @@ GameObject:
   - component: {fileID: 2845181656855903556}
   - component: {fileID: 2845181656855903557}
   - component: {fileID: 2845181656855903555}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44786,7 +44919,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -44833,7 +44966,7 @@ GameObject:
   - component: {fileID: 2845181656859950617}
   - component: {fileID: 2845181656859950618}
   - component: {fileID: 2845181656859950616}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44919,7 +45052,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -45073,7 +45206,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -45099,7 +45232,7 @@ GameObject:
   - component: {fileID: 2845181656888529642}
   - component: {fileID: 2845181656888529643}
   - component: {fileID: 2845181656888529641}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45185,7 +45318,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -45232,7 +45365,7 @@ GameObject:
   - component: {fileID: 2845181656890021999}
   - component: {fileID: 2845181656890021984}
   - component: {fileID: 2845181656890021998}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45318,7 +45451,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -45365,7 +45498,7 @@ GameObject:
   - component: {fileID: 2845181656891242172}
   - component: {fileID: 2845181656891242173}
   - component: {fileID: 2845181656891242171}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45451,7 +45584,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -45498,7 +45631,7 @@ GameObject:
   - component: {fileID: 2845181656895652591}
   - component: {fileID: 2845181656895652576}
   - component: {fileID: 2845181656895652590}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45584,7 +45717,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -45631,7 +45764,7 @@ GameObject:
   - component: {fileID: 2845181656900237469}
   - component: {fileID: 2845181656900237470}
   - component: {fileID: 2845181656900237468}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45717,7 +45850,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -45764,7 +45897,7 @@ GameObject:
   - component: {fileID: 2845181656900469082}
   - component: {fileID: 2845181656900469083}
   - component: {fileID: 2845181656900469081}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45850,7 +45983,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -45897,7 +46030,7 @@ GameObject:
   - component: {fileID: 2845181656904549517}
   - component: {fileID: 2845181656904549518}
   - component: {fileID: 2845181656904549516}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45983,7 +46116,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -46030,7 +46163,7 @@ GameObject:
   - component: {fileID: 2845181656904801976}
   - component: {fileID: 2845181656904801977}
   - component: {fileID: 2845181656904800583}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46116,7 +46249,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -46163,7 +46296,7 @@ GameObject:
   - component: {fileID: 2845181656909389932}
   - component: {fileID: 2845181656909389933}
   - component: {fileID: 2845181656909389931}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46249,7 +46382,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -46403,7 +46536,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -46429,7 +46562,7 @@ GameObject:
   - component: {fileID: 2845181656914476497}
   - component: {fileID: 2845181656914476498}
   - component: {fileID: 2845181656914476496}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46515,7 +46648,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -46562,7 +46695,7 @@ GameObject:
   - component: {fileID: 2845181656918942112}
   - component: {fileID: 2845181656918942113}
   - component: {fileID: 2845181656918942127}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46648,7 +46781,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -46695,7 +46828,7 @@ GameObject:
   - component: {fileID: 2845181656919534324}
   - component: {fileID: 2845181656919534325}
   - component: {fileID: 2845181656919534323}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46781,7 +46914,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -46935,7 +47068,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -46961,7 +47094,7 @@ GameObject:
   - component: {fileID: 2845181656932763751}
   - component: {fileID: 2845181656932763736}
   - component: {fileID: 2845181656932763750}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47047,7 +47180,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -47093,7 +47226,7 @@ GameObject:
   - component: {fileID: 2845181656936423682}
   - component: {fileID: 2845181656936423683}
   - component: {fileID: 2845181656936423684}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LevelWalls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47468,6 +47601,8 @@ Transform:
   - {fileID: 2845181655886544788}
   - {fileID: 2845181656890021985}
   - {fileID: 2845181655225762543}
+  - {fileID: 5293616696059366676}
+  - {fileID: 7994406930318737783}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -47841,6 +47976,8 @@ MonoBehaviour:
   - {fileID: 2845181655886544785}
   - {fileID: 2845181656890021998}
   - {fileID: 2845181655225762528}
+  - {fileID: 2624675754250110721}
+  - {fileID: 8310173775447629647}
   tilePrefab: {fileID: 6494896068278723908, guid: 5f7ea15196d4ab34eb72df5be951d59a, type: 3}
   tileStartPos: {x: 0, y: 0, z: 0}
   gridWidth: 1
@@ -47871,7 +48008,7 @@ GameObject:
   - component: {fileID: 2845181656940099319}
   - component: {fileID: 2845181656940099304}
   - component: {fileID: 2845181656940099318}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47957,7 +48094,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -48004,7 +48141,7 @@ GameObject:
   - component: {fileID: 2845181656950336579}
   - component: {fileID: 2845181656950336580}
   - component: {fileID: 2845181656950336578}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: WallTile(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48090,7 +48227,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -48122,6 +48259,139 @@ MonoBehaviour:
   downTile: {fileID: 2845181656314218572}
   leftTile: {fileID: 0}
   rightTile: {fileID: 0}
+  attachedTile: {fileID: 0}
+  owningGrid: {fileID: 2845181656936423683}
+  numTilesToSpawn: 1
+--- !u!1 &8231173035894801318
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7994406930318737783}
+  - component: {fileID: 2090487018762670955}
+  - component: {fileID: 4669808298913797872}
+  - component: {fileID: 8310173775447629647}
+  m_Layer: 6
+  m_Name: WallTile(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7994406930318737783
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8231173035894801318}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 40, y: -13, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2845181656936423682}
+  m_RootOrder: 357
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2090487018762670955
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8231173035894801318}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1410424701
+  m_SortingLayer: 4
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 708411790, guid: 8075331a6031ba14abde8ecf9dce2145, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.16, y: 0.16}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!61 &4669808298913797872
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8231173035894801318}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 41907cf1c393ee84a860ca606c40c5d9, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 1
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &8310173775447629647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8231173035894801318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5118e4e3c8080146ae24d61d73cc0fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colliderComponent: {fileID: 0}
+  rendererComponent: {fileID: 2090487018762670955}
+  upTile: {fileID: 0}
+  downTile: {fileID: 0}
+  leftTile: {fileID: 0}
+  rightTile: {fileID: 2845181656162631498}
   attachedTile: {fileID: 0}
   owningGrid: {fileID: 2845181656936423683}
   numTilesToSpawn: 1

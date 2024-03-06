@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class MovementScheme : ScriptableObject
 {
-    public enum Responses { NONE, MOVE, STAGGER }
+    public enum Responses { NONE, MOVE, STAGGER, WIN }
 
     public GameObject environment;
 

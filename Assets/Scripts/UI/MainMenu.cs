@@ -11,7 +11,17 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameObject g = GameObject.Find("LevelGrid");
+        if (g != null)
+        {
+            Destroy(g);
+        }
+
+        GameObject g2 = GameObject.Find("LevelWalls");
+        if (g2 != null)
+        {
+            Destroy(g2);
+        }
     }
 
     public void NewGame()

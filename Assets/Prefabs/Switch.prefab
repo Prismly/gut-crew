@@ -97,6 +97,6 @@ MonoBehaviour:
   DisplayName: 
   Description: 
   HasPair: 0
-  ModuleCooldown: 0.2
+  ModuleCooldown: 0.5
   bot: {fileID: 0}
   limb: 0

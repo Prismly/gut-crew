@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class AutoBot : Bot
 {
-    [SerializeField] private float ActionTimer = 1f;
+    float ActionTimer = 0;
     float timer = 0;
+
+    private Limbs LastAction = Limbs.TORSO;
+
+    protected override void WinBehavior()
+    {
+        gameManager.EnemyWin();
+    }
 
     private void Start()
     {
-        timer = ActionTimer;
+        ActionTimer = GameObject.Find("LevelGrid").GetComponent<Global>().EnemyActionTimer;
     }
 
     // Start is called before the first frame update
@@ -21,17 +28,41 @@ public class AutoBot : Bot
             timer -= Time.deltaTime;
         else
         {
-            int rand = Random.Range(1, 5);
-            if (rand == 0)
-                ProcessInput(Limbs.ARM_L);
-            else if (rand == 1)
-                ProcessInput(Limbs.ARM_R);
-            else if (rand == 2)
-                ProcessInput(Limbs.LEG_L);
-            else
-                ProcessInput(Limbs.LEG_R);
+            MovementScheme Objective = myTrack.GetSegmentAtDist(CurrentDist).MoveScheme;
+            TryMove(Objective);
+            
             timer = ActionTimer;
         }
            
+    }
+
+    public void TryMove(MovementScheme Objective)
+    {
+        if (Objective is Climb)
+        {
+            if (LastAction == Limbs.ARM_R)
+            {
+                ProcessInput(Limbs.ARM_L);
+                LastAction = Limbs.ARM_L;
+            }
+            else
+            {
+                ProcessInput(Limbs.ARM_R);
+                LastAction = Limbs.ARM_R;
+            }
+        }
+        else
+        {
+            if (LastAction == Limbs.LEG_R)
+            {
+                ProcessInput(Limbs.LEG_L);
+                LastAction = Limbs.LEG_L;
+            }
+            else
+            {
+                ProcessInput(Limbs.LEG_R);
+                LastAction = Limbs.LEG_R;
+            }
+        }
     }
 }

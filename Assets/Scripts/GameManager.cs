@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using TMPro.EditorUtilities;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,6 +16,12 @@ public class GameManager : MonoBehaviour
     public bool RaceInProgress { get { return raceTime >= 0; } }
 
     [SerializeField] private float raceMaxTime = 600f;
+
+    [SerializeField] private TMP_Text WinText;
+    [SerializeField] private TMP_Text LoseText;
+
+    string winner = "";
+    float TransitionTimer = -1;
 
     private void Awake()
     {
@@ -27,6 +36,16 @@ public class GameManager : MonoBehaviour
 
         if (raceTime >= raceMaxTime)
             raceTime = -1;
+        
+        if (winner != "")
+        {
+            if (TransitionTimer > 0)
+                TransitionTimer -= Time.deltaTime;
+            else if (winner == "player")
+                SceneManager.LoadScene(2);
+            else if (winner == "enemy")
+                SceneManager.LoadScene(3);
+        }
     }
 
     public void BeginRace()
@@ -38,4 +57,24 @@ public class GameManager : MonoBehaviour
     {
         raceTime = -1;
     }
+
+    public void PlayerWin()
+    {
+        if (winner != "")
+            return;
+
+        WinText.gameObject.SetActive(true);
+        winner = "player";
+        TransitionTimer = 2;
+    }
+
+    public void EnemyWin()
+    {
+        if (winner != "")
+            return;
+
+        LoseText.gameObject.SetActive(true);
+        winner = "enemy";
+        TransitionTimer = 2;
+    }    
 }

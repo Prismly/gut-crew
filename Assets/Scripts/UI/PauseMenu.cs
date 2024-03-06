@@ -12,7 +12,8 @@ public class PauseMenu : MonoBehaviour
 
     public void Menu()
     {
-        SceneManager.LoadScene("Main Menu");
+        Time.timeScale = 1.0f;
+        SceneManager.LoadScene(0);
     }
 
     public void TogglePause()

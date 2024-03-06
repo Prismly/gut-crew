@@ -96,6 +96,7 @@ public class ModuleController : MonoBehaviour
                     if (moduleIndex >= Modules.Count)
                     {
                         Debug.Log("Out of modules");
+                        GameObject.Find("LevelGrid").GetComponent<Global>().EnemyActionTimer *= 0.75f;
                         Destroy(gameObject);
                         SceneManager.LoadScene(1);
                         return;

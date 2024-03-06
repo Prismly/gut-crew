@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class ManualBot : Bot
 {
+    protected override void WinBehavior()
+    {
+        gameManager.PlayerWin();
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.G))

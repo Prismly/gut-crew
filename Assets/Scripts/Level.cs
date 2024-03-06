@@ -8,7 +8,8 @@ public class Level : MonoBehaviour
 {
     [SerializeField] private Track[] tracks;
     [SerializeField] private MovementScheme[] movementSchemes;
-    [SerializeField] private int segmentCount = 3;
+    [SerializeField] private MovementScheme finishScheme;
+    [SerializeField] private int segmentCount = 10;
 
     [SerializeField] private Transform terrainTileContainer;
 
@@ -33,6 +34,15 @@ public class Level : MonoBehaviour
             {
                 t.AppendSegment(randDist, randScheme);
             }
+        }
+
+        GameObject newerEnvironmentTile = Instantiate(finishScheme.environment);
+        newerEnvironmentTile.transform.SetParent(terrainTileContainer);
+        newerEnvironmentTile.transform.localPosition = Vector3.right * (totalDist + 2);
+
+        foreach (Track t in tracks)
+        {
+            t.AppendSegment(totalDist, finishScheme);
         }
     }
 
