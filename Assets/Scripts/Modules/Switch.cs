@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Switch : ModuleBehavior
 {
-    [SerializeField] private GameObject Limb;
+    [SerializeField] private ManualBot bot;
+    [SerializeField] private Bot.Limbs limb;
 
     protected override void Execute(GameObject Executor)
     {
-        //Limb.Activate;
+        bot.ProcessInput(limb);
     }
 }

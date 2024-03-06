@@ -11,6 +11,18 @@ PrefabInstance:
       propertyPath: canDestroy
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3770367040577981575, guid: 8cece261706edad489d8dd2afb90f66b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.44258854
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770367040577981575, guid: 8cece261706edad489d8dd2afb90f66b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.44653046
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770367040577981575, guid: 8cece261706edad489d8dd2afb90f66b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.003
+      objectReference: {fileID: 0}
     - target: {fileID: 6089481207252672488, guid: 8cece261706edad489d8dd2afb90f66b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -59,6 +71,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Switch
       objectReference: {fileID: 0}
+    - target: {fileID: 8945586122792026344, guid: 8cece261706edad489d8dd2afb90f66b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cece261706edad489d8dd2afb90f66b, type: 3}
 --- !u!1 &4721854665749268214 stripped
@@ -78,5 +94,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44603b41e5965f149a31aa19b4f21aef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ModuleCooldown: 1
-  Limb: {fileID: 0}
+  DisplayName: 
+  Description: 
+  HasPair: 0
+  ModuleCooldown: 0.2
+  bot: {fileID: 0}
+  limb: 0

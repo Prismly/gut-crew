@@ -129,7 +129,7 @@ MonoBehaviour:
   maxFallSpeed: 20
   runAccel: 40
   dragAccel: 40
-  jumpImpulse: 25
+  jumpImpulse: 22
   gravScaleLow: 1
   gravScaleHigh: 3
   groundChecker: {fileID: 4382612527553407698}
@@ -265,6 +265,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: c3791830-717f-443b-9089-b77f6de85745
     m_ActionName: UI/Pause[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d27a7dbb-614e-4fe2-8f1b-9628ed422c91
+    m_ActionName: ModuleBuilder/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 69d30708-49fc-4ce0-95a4-f2e8d15337dd
+    m_ActionName: ModuleBuilder/Place[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2a89a630-07a4-4c2c-832f-1b3aa4ac33d0
+    m_ActionName: ModuleBuilder/Next Module[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2cb04fe4-5ab3-4e10-937f-50669bc78967
+    m_ActionName: ModuleBuilder/Previous Module[/Keyboard/q]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player 1

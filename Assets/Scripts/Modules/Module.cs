@@ -13,7 +13,7 @@ public class Module : ObjectGrid
     {
         foreach (Tile tile in tiles)
         {
-            tile.GetComponent<SpriteRenderer>().enabled = false;
+            //tile.GetComponent<SpriteRenderer>().enabled = false;
         }
     }
 

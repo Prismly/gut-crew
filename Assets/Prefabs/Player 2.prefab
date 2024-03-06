@@ -201,7 +201,7 @@ MonoBehaviour:
   maxFallSpeed: 20
   runAccel: 40
   dragAccel: 40
-  jumpImpulse: 25
+  jumpImpulse: 22
   gravScaleLow: 1
   gravScaleHigh: 3
   groundChecker: {fileID: 7196807514424758661}
