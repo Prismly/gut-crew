@@ -33,19 +33,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4321962623271457502, guid: 8cece261706edad489d8dd2afb90f66b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 8.019438
+      value: 6.502206
       objectReference: {fileID: 0}
     - target: {fileID: 4321962623271457502, guid: 8cece261706edad489d8dd2afb90f66b, type: 3}
       propertyPath: m_LocalScale.y
-      value: 7.948103
+      value: 6.4443674
+      objectReference: {fileID: 0}
+    - target: {fileID: 4321962623271457502, guid: 8cece261706edad489d8dd2afb90f66b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8108057
       objectReference: {fileID: 0}
     - target: {fileID: 4321962623271457502, guid: 8cece261706edad489d8dd2afb90f66b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.2367
+      value: 1.03
       objectReference: {fileID: 0}
     - target: {fileID: 4321962623271457502, guid: 8cece261706edad489d8dd2afb90f66b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2726
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4705754916459021934, guid: 8cece261706edad489d8dd2afb90f66b, type: 3}
       propertyPath: m_Color.b
@@ -119,6 +123,14 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.1764706
       objectReference: {fileID: 0}
+    - target: {fileID: 8173366777504652171, guid: 8cece261706edad489d8dd2afb90f66b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f41a6f5a12b7d9042a2f96280ef5706a, type: 3}
+    - target: {fileID: 8173366777504652171, guid: 8cece261706edad489d8dd2afb90f66b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8225003196961885654, guid: 8cece261706edad489d8dd2afb90f66b, type: 3}
       propertyPath: m_Name
       value: TeleporterModule
@@ -142,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d9e730f15459894b8e9be9d68deaaf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DisplayName: 
-  Description: 
+  DisplayName: Teleporter
+  Description: Teleports you between the two modules
   HasPair: 1
   ModuleCooldown: 1

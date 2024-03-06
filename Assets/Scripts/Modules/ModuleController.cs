@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class ModuleController : MonoBehaviour
 {
     [SerializeField, Tooltip("the level grid to set visibility")] private LevelGrid owningLevel;
     [SerializeField, Tooltip("the module to place")] private GameObject[] ModulesToPlace;
-    [SerializeField, Tooltip("the game manager")] private MicroGameManager GameManager;
     private ObjectGrid grid;
 
     [SerializeField] private TMP_Text ModuleName;
@@ -96,8 +96,8 @@ public class ModuleController : MonoBehaviour
                     if (moduleIndex >= Modules.Count)
                     {
                         Debug.Log("Out of modules");
-                        GameManager.EndModulePlacement();
                         Destroy(gameObject);
+                        SceneManager.LoadScene(1);
                         return;
                     }
 

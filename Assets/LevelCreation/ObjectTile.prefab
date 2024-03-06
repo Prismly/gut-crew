@@ -7,9 +7,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2870255264117747770, guid: be779bec59d44bf41887ee84b989e28d, type: 3}
+      propertyPath: m_Size.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870255264117747770, guid: be779bec59d44bf41887ee84b989e28d, type: 3}
+      propertyPath: m_Size.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3641694336279801582, guid: be779bec59d44bf41887ee84b989e28d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -200025946, guid: 8075331a6031ba14abde8ecf9dce2145, type: 3}
     - target: {fileID: 3641694336279801582, guid: be779bec59d44bf41887ee84b989e28d, type: 3}
       propertyPath: m_Color.a
       value: 0.65882355
+      objectReference: {fileID: 0}
+    - target: {fileID: 3641694336279801582, guid: be779bec59d44bf41887ee84b989e28d, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3641694336279801582, guid: be779bec59d44bf41887ee84b989e28d, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1410424701
       objectReference: {fileID: 0}
     - target: {fileID: 5422084037602569866, guid: be779bec59d44bf41887ee84b989e28d, type: 3}
       propertyPath: m_RootOrder
@@ -62,11 +82,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7529192018891526539, guid: be779bec59d44bf41887ee84b989e28d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: be779bec59d44bf41887ee84b989e28d, type: 3}
---- !u!65 &1633777508479684444 stripped
-BoxCollider:
-  m_CorrespondingSourceObject: {fileID: 9073347207746701759, guid: be779bec59d44bf41887ee84b989e28d, type: 3}
-  m_PrefabInstance: {fileID: 7730242713596069603}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1860599954088817682 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8256640759699108593, guid: be779bec59d44bf41887ee84b989e28d, type: 3}
@@ -84,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff60dc56ce968384c8eec5bf92a915c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colliderComponent: {fileID: 1633777508479684444}
+  colliderComponent: {fileID: 5517586009520142041}
   rendererComponent: {fileID: 6471307071914534925}
   defaultColor: {r: 1, g: 1, b: 1, a: 0.65882355}
   highlightColor: {r: 0, g: 1, b: 1, a: 0.65882355}
@@ -95,8 +110,15 @@ MonoBehaviour:
   rightTile: {fileID: 0}
   attachedTile: {fileID: 0}
   owningGrid: {fileID: 0}
+  numTilesToSpawn: 1
   dragging: 0
   prevHoverTile: {fileID: 0}
+  isDestructionTile: 0
+--- !u!65 &5517586009520142041 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 2870255264117747770, guid: be779bec59d44bf41887ee84b989e28d, type: 3}
+  m_PrefabInstance: {fileID: 7730242713596069603}
+  m_PrefabAsset: {fileID: 0}
 --- !u!212 &6471307071914534925 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 3641694336279801582, guid: be779bec59d44bf41887ee84b989e28d, type: 3}
