@@ -17,13 +17,11 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        BeginRace();
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.M))
-            BeginRace();
-
         if (raceTime >= 0)
             raceTime += Time.deltaTime;
 

@@ -7,6 +7,16 @@ public class Haley : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        string tempname = gameObject.name;
+        gameObject.name = "Haley";
+        if (GameObject.Find(tempname) != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+            gameObject.name = tempname;
+        }
     }
 }

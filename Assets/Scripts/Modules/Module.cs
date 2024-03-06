@@ -8,15 +8,6 @@ public class Module : ObjectGrid
 
     private bool Active = true;
 
-
-    private void Awake()
-    {
-        foreach (Tile tile in tiles)
-        {
-            //tile.GetComponent<SpriteRenderer>().enabled = false;
-        }
-    }
-
     public void SetActive(bool active)
     {
         Active = active;
