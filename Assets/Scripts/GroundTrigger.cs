@@ -4,22 +4,25 @@ using UnityEngine;
 
 public class GroundTrigger : MonoBehaviour
 {
-    private bool reliableTriggerStay = false;
+    private int reliableTriggerStay = 0;
 
     // Layers must be set up such that this and "OnTriggerExit2D" ONLY interact with "Terrain" objects
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        reliableTriggerStay = true;
+        reliableTriggerStay++;
+        //Debug.Log("TriggerEnter");
     }
 
     // Layers must be set up such that this and "OnTriggerEnter2D" ONLY interact with "Terrain" objects
     private void OnTriggerExit2D(Collider2D collision)
     {
-        reliableTriggerStay = false;
+        reliableTriggerStay--;
+        //Debug.Log("TriggerExit");
     }
 
     public bool GroundCheck()
     {
-        return reliableTriggerStay;
+        //Debug.Log(reliableTriggerStay);
+        return reliableTriggerStay > 0;
     }
 }
