@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "MovementSchemes/Finish")]
 public class Finish : MovementScheme
 {
-    public override Responses ProcessLimbData(LimbData inputData)
+    public override Responses ProcessLimbData(LimbData inputData, Bot targetBot)
     {
         // Any input results in a win
         return Responses.WIN;

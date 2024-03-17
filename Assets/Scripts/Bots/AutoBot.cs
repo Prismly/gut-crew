@@ -20,7 +20,7 @@ public class AutoBot : Bot
     }
 
     // Start is called before the first frame update
-    private void Update()
+    private new void Update()
     {
         base.Update();
 

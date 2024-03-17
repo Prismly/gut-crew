@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 currentInput = Vector2.zero;
     [Header("Running")]
-    [SerializeField] private float minSpeed = 0.05f;
+    //[SerializeField] private float minSpeed = 0.05f;
     [SerializeField] private float maxSpeed = 1.0f;
     [SerializeField] private float maxFallSpeed = 3.0f;
     [SerializeField] private float runAccel = 1.0f;

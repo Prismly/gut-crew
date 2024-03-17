@@ -9,7 +9,7 @@ public class ManualBot : Bot
         gameManager.PlayerWin();
     }
 
-    private void Update()
+    private new void Update()
     {
         if (Input.GetKeyDown(KeyCode.G))
             ProcessInput(Limbs.ARM_L);
