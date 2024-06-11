@@ -8,15 +8,15 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - LevelTile
   - Water
   - UI
+  - Terrain
+  - PlayerSpawn
+  - TerrainCheck
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Player
   - 
   - 
   - 
@@ -40,4 +40,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1275001449
+    locked: 0
+  - name: Far Object
+    uniqueID: 174570203
+    locked: 0
+  - name: Near Object
+    uniqueID: 2710781147
+    locked: 0
+  - name: Foreground
+    uniqueID: 2884542595
     locked: 0
